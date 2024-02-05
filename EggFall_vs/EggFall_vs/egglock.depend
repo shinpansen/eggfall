@@ -1,0 +1,1386 @@
+# depslib dependency file v1.0
+1528883557 source:h:\eggfall_vs\eggfall_vs\characters\hero.cpp
+	"hero.hpp"
+
+1528876299 h:\eggfall_vs\eggfall_vs\characters\hero.hpp
+	<math.h>
+	<string.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/Audio.hpp>
+	<Box2D/Box2D.h>
+	"../tools/input.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+	"../tools/utils.hpp"
+	"../effects/animation.hpp"
+	"../effects/effects.hpp"
+	"../effects/sound.hpp"
+	"../projectiles/projectiles.hpp"
+	"../UI/display/scoreManager.hpp"
+	"../UI/display/playerHUD.hpp"
+
+1528273244 h:\eggfall_vs\eggfall_vs\tools\input.hpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<fstream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	"files.hpp"
+	"xmlReader.hpp"
+	"utils.hpp"
+
+1528807979 h:\eggfall_vs\eggfall_vs\tools\files.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+
+1518968632 h:\eggfall_vs\eggfall_vs\tools\xmlreader.hpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<fstream>
+	<vector>
+	"../tinyXML/tinyxml.h"
+	"files.hpp"
+
+1305397498 h:\eggfall_vs\eggfall_vs\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1305397498 h:\eggfall_vs\eggfall_vs\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1528272731 h:\eggfall_vs\eggfall_vs\tools\utils.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<typeinfo>
+	<SFML/Graphics.hpp>
+	"input.hpp"
+
+1527498202 h:\eggfall_vs\eggfall_vs\tools\box2dtools.hpp
+	<iostream>
+	<math.h>
+	<vector>
+	<typeinfo>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"utils.hpp"
+
+1526912426 h:\eggfall_vs\eggfall_vs\effects\animation.hpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	"../tools/utils.hpp"
+
+1528877121 h:\eggfall_vs\eggfall_vs\effects\effects.hpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	<math.h>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"animation.hpp"
+	"effectObj.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+
+1528204389 h:\eggfall_vs\eggfall_vs\effects\effectobj.hpp
+	<iostream>
+	<cstdlib>
+	<cmath>
+	<math.h>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"animation.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/utils.hpp"
+	"../UI/menu/menuList.hpp"
+
+1525603107 h:\eggfall_vs\eggfall_vs\ui\menulist.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/xmlReader.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+
+1527850285 h:\eggfall_vs\eggfall_vs\effects\sound.hpp
+	<iostream>
+	<vector>
+	<random>
+	<ctime>
+	<SFML/Audio.hpp>
+	"../tools/settings.hpp"
+
+1518968598 h:\eggfall_vs\eggfall_vs\tools\settings.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	"xmlReader.hpp"
+
+1528122975 h:\eggfall_vs\eggfall_vs\projectiles\projectiles.hpp
+	<iostream>
+	<math.h>
+	<vector>
+	<random>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+	"../tools/utils.hpp"
+	"../characters/hero.hpp"
+	"../effects/effects.hpp"
+	"../effects/animation.hpp"
+	"../effects/sound.hpp"
+	"../environment/maps.hpp"
+	"projectileObj.hpp"
+
+1528205648 h:\eggfall_vs\eggfall_vs\environment\maps.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<math.h>
+	<string>
+	<functional>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../tools/files.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/mapReader.hpp"
+	"../effects/effects.hpp"
+	"../characters/AI.hpp"
+	"walkable/scalablePlatform.hpp"
+	"walkable/ladder.hpp"
+	"walkable/platform.hpp"
+	"walkable/bridge.hpp"
+	"flourish/teeter.hpp"
+	"flourish/grass.hpp"
+	"flourish/tree/firShort.hpp"
+	"flourish/tree/firLong.hpp"
+	"flourish/tree/cutTree.hpp"
+	"flourish/tree/roundTree.hpp"
+	"flourish/tree/oak.hpp"
+	"flourish/tree/shrub.hpp"
+	"flourish/tree/shrubSmall.hpp"
+	"flourish/tree/sakura.hpp"
+	"flourish/lamp/conicalLampA.hpp"
+	"flourish/lamp/conicalLampB.hpp"
+	"flourish/lamp/conicalLampC.hpp"
+	"flourish/lamp/pipeLamp.hpp"
+	"flourish/lamp/hatLamp.hpp"
+	"../editor/editor.hpp"
+
+1525778291 h:\eggfall_vs\eggfall_vs\tools\mapreader.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<SFML\Graphics.hpp>
+	"../tinyXML/tinyxml.h"
+	"../effects/colorScheme.hpp"
+	"files.hpp"
+	"xmlReader.hpp"
+
+1520870921 h:\eggfall_vs\eggfall_vs\effects\colorscheme.hpp
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1524139062 h:\eggfall_vs\eggfall_vs\objects\scalableplatform.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+
+1524222615 h:\eggfall_vs\eggfall_vs\objects\ladder.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+	"../objects/scalablePlatform.hpp"
+
+1524223461 h:\eggfall_vs\eggfall_vs\objects\platform.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+	"../objects/scalablePlatform.hpp"
+
+1524584368 h:\eggfall_vs\eggfall_vs\objects\bridge.hpp
+	<iostream>
+	<vector>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+
+1526891524 h:\eggfall_vs\eggfall_vs\editor\editor.hpp
+	<iostream>
+	<vector>
+	<functional>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../environment/maps.hpp"
+	"../tools/input.hpp"
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+	"../effects/effects.hpp"
+	"../environment/flourish/grass.hpp"
+	"../UI/menu/menuList.hpp"
+	"editorGroundModule.hpp"
+	"editorPlatformModule.hpp"
+	"editorBridgeModule.hpp"
+
+1524048952 h:\eggfall_vs\eggfall_vs\environment\grass.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"../tools/Box2DTools.hpp"
+	"../tools/utils.hpp"
+	"../tools/files.hpp"
+	"../effects/colorScheme.hpp"
+
+1525691395 h:\eggfall_vs\eggfall_vs\editor\editorgroundmodule.hpp
+	"editor.hpp"
+
+1525691402 h:\eggfall_vs\eggfall_vs\editor\editorplatformmodule.hpp
+	"editor.hpp"
+	"editorGroundModule.hpp"
+
+1518867827 h:\eggfall_vs\eggfall_vs\environment\tree.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/files.hpp"
+	"../tools/Box2DTools.hpp"
+	"../effects/effects.hpp"
+	"../effects/effectObj.hpp"
+
+1527694357 h:\eggfall_vs\eggfall_vs\projectiles\spellobj.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"../effects/animation.hpp"
+	"../effects/effects.hpp"
+	"../effects/sound.hpp"
+	"../characters/hero.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/utils.hpp"
+
+1519923456 h:\eggfall_vs\eggfall_vs\ui\scoremanager.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"../characters/hero.hpp"
+	"../effects/sound.hpp"
+	"../tools/files.hpp"
+	"../tools/xmlReader.hpp"
+	"../effects/effects.hpp"
+
+1528302708 source:h:\eggfall_vs\eggfall_vs\characters\wizard.cpp
+	"wizard.hpp"
+
+1528201941 h:\eggfall_vs\eggfall_vs\characters\wizard.hpp
+	"hero.hpp"
+
+1525877363 source:h:\eggfall_vs\eggfall_vs\editor\editor.cpp
+	"editor.hpp"
+
+1526896204 source:h:\eggfall_vs\eggfall_vs\editor\editorgroundmodule.cpp
+	"editorGroundModule.hpp"
+
+1525863168 source:h:\eggfall_vs\eggfall_vs\editor\editorplatformmodule.cpp
+	"editorPlatformModule.hpp"
+
+1526941138 source:h:\eggfall_vs\eggfall_vs\effects\animation.cpp
+	"animation.hpp"
+
+1520872825 source:h:\eggfall_vs\eggfall_vs\effects\colorscheme.cpp
+	"colorScheme.hpp"
+
+1528204369 source:h:\eggfall_vs\eggfall_vs\effects\effectobj.cpp
+	"effectObj.hpp"
+
+1528877681 source:h:\eggfall_vs\eggfall_vs\effects\effects.cpp
+	"effects.hpp"
+
+1527850313 source:h:\eggfall_vs\eggfall_vs\effects\sound.cpp
+	"sound.hpp"
+
+1524669135 source:h:\eggfall_vs\eggfall_vs\environment\grass.cpp
+	"grass.hpp"
+
+1528215024 source:h:\eggfall_vs\eggfall_vs\environment\maps.cpp
+	"maps.hpp"
+
+1524669326 source:h:\eggfall_vs\eggfall_vs\environment\tree.cpp
+	"tree.hpp"
+
+1527261761 source:h:\eggfall_vs\eggfall_vs\main.cpp
+	<stdlib.h>
+	<iostream>
+	<time.h>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"tools/settings.hpp"
+	"UI/mainGame.hpp"
+
+1527771705 h:\eggfall_vs\eggfall_vs\ui\maingame.hpp
+	<iostream>
+	<vector>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../tools/Box2DTools.hpp"
+	"../tools/input.hpp"
+	"../tools/xmlReader.hpp"
+	"../tools/settings.hpp"
+	"../effects/effects.hpp"
+	"../effects/sound.hpp"
+	"../projectiles/projectiles.hpp"
+	"../characters/wizard.hpp"
+	"../characters/AI.hpp"
+	"../environment/maps.hpp"
+	"../editor/editor.hpp"
+	"menu/menuList.hpp"
+	"menu/menuOptions.hpp"
+	"menu/menuPad.hpp"
+	"menu/menuSelector.hpp"
+	"menu/menuHeroSelector.hpp"
+	"display/keyboardKey.hpp"
+	"display/scoreManager.hpp"
+
+1511438156 h:\eggfall_vs\eggfall_vs\tools\camera.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../characters/hero.hpp"
+
+1512475782 h:\eggfall_vs\eggfall_vs\ui\menuoptions.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuList.hpp"
+	"../tools/xmlReader.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+
+1512579356 h:\eggfall_vs\eggfall_vs\ui\menupad.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/xmlReader.hpp"
+	"../tools/files.hpp"
+	"../tools/input.hpp"
+
+1517438629 h:\eggfall_vs\eggfall_vs\ui\menuselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/input.hpp"
+
+1512401641 h:\eggfall_vs\eggfall_vs\ui\menuheroselector.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"heroSelector.hpp"
+	"menuList.hpp"
+	"keyboardKey.hpp"
+	"../tools/files.hpp"
+	"../tools/input.hpp"
+	"../tools/xmlReader.hpp"
+	"../effects/sound.hpp"
+
+1517438656 h:\eggfall_vs\eggfall_vs\ui\heroselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuSelector.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+	"../tools/xmlReader.hpp"
+	"../effects/sound.hpp"
+	"keyboardKey.hpp"
+
+1511438210 h:\eggfall_vs\eggfall_vs\ui\keyboardkey.hpp
+	<iostream>
+	<vector>
+	<string>
+	<math.h>
+	<SFML/Graphics.hpp>
+	"../tools/files.hpp"
+
+1524585305 source:h:\eggfall_vs\eggfall_vs\objects\bridge.cpp
+	"bridge.hpp"
+
+1524242418 source:h:\eggfall_vs\eggfall_vs\objects\scalableplatform.cpp
+	"scalablePlatform.hpp"
+
+1457809226 source:h:\eggfall_vs\eggfall_vs\resource.rc
+
+1305397498 source:h:\eggfall_vs\eggfall_vs\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1305397498 source:h:\eggfall_vs\eggfall_vs\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1305397498 source:h:\eggfall_vs\eggfall_vs\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1305397498 source:h:\eggfall_vs\eggfall_vs\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1527498335 source:h:\eggfall_vs\eggfall_vs\tools\box2dtools.cpp
+
+1519491667 source:h:\eggfall_vs\eggfall_vs\tools\camera.cpp
+	"camera.hpp"
+
+1528807981 source:h:\eggfall_vs\eggfall_vs\tools\files.cpp
+	"files.hpp"
+
+1528273248 source:h:\eggfall_vs\eggfall_vs\tools\input.cpp
+	"input.hpp"
+
+1525778445 source:h:\eggfall_vs\eggfall_vs\tools\mapreader.cpp
+	"mapReader.hpp"
+
+1527264251 source:h:\eggfall_vs\eggfall_vs\tools\settings.cpp
+	"settings.hpp"
+
+1528272741 source:h:\eggfall_vs\eggfall_vs\tools\utils.cpp
+	"utils.hpp"
+
+1520421362 source:h:\eggfall_vs\eggfall_vs\tools\xmlreader.cpp
+	"xmlReader.hpp"
+
+1517438663 source:h:\eggfall_vs\eggfall_vs\ui\heroselector.cpp
+	"heroSelector.hpp"
+
+1511438278 source:h:\eggfall_vs\eggfall_vs\ui\keyboardkey.cpp
+	"keyboardKey.hpp"
+
+1528877210 source:h:\eggfall_vs\eggfall_vs\ui\maingame.cpp
+	"mainGame.hpp"
+
+1526293942 source:h:\eggfall_vs\eggfall_vs\ui\menuheroselector.cpp
+	"menuHeroSelector.hpp"
+
+1520196341 source:h:\eggfall_vs\eggfall_vs\ui\menulist.cpp
+	"menuList.hpp"
+
+1512576232 source:h:\eggfall_vs\eggfall_vs\ui\menuoptions.cpp
+	"menuOptions.hpp"
+
+1520172788 source:h:\eggfall_vs\eggfall_vs\ui\menupad.cpp
+	"menuPad.hpp"
+
+1517438623 source:h:\eggfall_vs\eggfall_vs\ui\menuselector.cpp
+	"menuSelector.hpp"
+
+1519989450 source:h:\eggfall_vs\eggfall_vs\ui\scoremanager.cpp
+	"scoreManager.hpp"
+
+1528276792 source:h:\eggfall_vs\eggfall_vs\projectiles\projectiles.cpp
+	"projectiles.hpp"
+
+1528047275 source:h:\eggfall_vs\eggfall_vs\projectiles\spellobj.cpp
+	"spellObj.hpp"
+
+1525690065 h:\eggfall_vs\eggfall_vs\environment\walkable\scalableplatform.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../../tools/utils.hpp"
+	"../../tools/Box2DTools.hpp"
+
+1525690089 h:\eggfall_vs\eggfall_vs\environment\walkable\ladder.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"scalablePlatform.hpp"
+
+1527355946 h:\eggfall_vs\eggfall_vs\environment\walkable\platform.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"scalablePlatform.hpp"
+
+1525858457 h:\eggfall_vs\eggfall_vs\environment\walkable\bridge.hpp
+	<iostream>
+	<vector>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../../tools/utils.hpp"
+	"../../tools/Box2DTools.hpp"
+
+1525690349 h:\eggfall_vs\eggfall_vs\environment\flourish\grass.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"../../tools/Box2DTools.hpp"
+	"../../tools/utils.hpp"
+	"../../tools/files.hpp"
+	"../../effects/colorScheme.hpp"
+
+1525965440 h:\eggfall_vs\eggfall_vs\editor\editorbridgemodule.hpp
+	"editor.hpp"
+
+1525690389 h:\eggfall_vs\eggfall_vs\environment\flourish\tree.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../../tools/files.hpp"
+	"../../tools/Box2DTools.hpp"
+	"../../effects/effects.hpp"
+	"../../effects/effectObj.hpp"
+
+1525965847 source:h:\eggfall_vs\eggfall_vs\editor\editorbridgemodule.cpp
+	"editorBridgeModule.hpp"
+
+1526151877 source:h:\eggfall_vs\eggfall_vs\environment\flourish\grass.cpp
+	"grass.hpp"
+
+1526024759 source:h:\eggfall_vs\eggfall_vs\environment\flourish\tree.cpp
+	"tree.hpp"
+
+1526042772 source:h:\eggfall_vs\eggfall_vs\environment\walkable\bridge.cpp
+	"bridge.hpp"
+
+1524242418 source:h:\eggfall_vs\eggfall_vs\environment\walkable\scalableplatform.cpp
+	"scalablePlatform.hpp"
+
+1526546643 h:\eggfall_vs\eggfall_vs\environment\flourish\teeter.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../../tools/files.hpp"
+	"../../tools/Box2DTools.hpp"
+	"../../effects/effects.hpp"
+	"../../effects/effectObj.hpp"
+
+1526650380 source:h:\eggfall_vs\eggfall_vs\environment\flourish\teeter.cpp
+	"teeter.hpp"
+
+1526487275 h:\eggfall_vs\eggfall_vs\environment\flourish\tree\firshort.hpp
+	"teeterTree.hpp"
+
+1526487288 h:\eggfall_vs\eggfall_vs\environment\flourish\tree\firlong.hpp
+	"teeterTree.hpp"
+
+1526487262 h:\eggfall_vs\eggfall_vs\environment\flourish\tree\cuttree.hpp
+	"teeterTree.hpp"
+
+1526487251 h:\eggfall_vs\eggfall_vs\environment\flourish\tree\roundtree.hpp
+	"teeterTree.hpp"
+
+1526487491 h:\eggfall_vs\eggfall_vs\environment\flourish\tree\oak.hpp
+	"teeterTree.hpp"
+
+1526487992 h:\eggfall_vs\eggfall_vs\environment\flourish\tree\shrub.hpp
+	"teeterTree.hpp"
+
+1526487981 h:\eggfall_vs\eggfall_vs\environment\flourish\tree\shrubsmall.hpp
+	"teeterTree.hpp"
+
+1526487573 h:\eggfall_vs\eggfall_vs\environment\flourish\tree\sakura.hpp
+	"teeterTree.hpp"
+
+1526574478 h:\eggfall_vs\eggfall_vs\environment\flourish\tree\teetertree.hpp
+	"../teeter.hpp"
+
+1526659600 h:\eggfall_vs\eggfall_vs\environment\flourish\lamp\conicallampa.hpp
+	"teeterLamp.hpp"
+
+1526659957 h:\eggfall_vs\eggfall_vs\environment\flourish\lamp\teeterlamp.hpp
+	"../teeter.hpp"
+
+1526659591 h:\eggfall_vs\eggfall_vs\environment\flourish\lamp\conicallampb.hpp
+	"teeterLamp.hpp"
+
+1526659587 h:\eggfall_vs\eggfall_vs\environment\flourish\lamp\conicallampc.hpp
+	"teeterLamp.hpp"
+
+1526660487 h:\eggfall_vs\eggfall_vs\environment\flourish\lamp\pipelamp.hpp
+	"teeterLamp.hpp"
+
+1526660531 h:\eggfall_vs\eggfall_vs\environment\flourish\lamp\hatlamp.hpp
+	"teeterLamp.hpp"
+
+1526660008 source:h:\eggfall_vs\eggfall_vs\environment\flourish\lamp\teeterlamp.cpp
+	"teeterLamp.hpp"
+
+1526575213 source:h:\eggfall_vs\eggfall_vs\environment\flourish\tree\teetertree.cpp
+	"teeterTree.hpp"
+
+1526891311 h:\eggfall_vs\eggfall_vs\ui\menu\menulist.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../../tools/xmlReader.hpp"
+	"../../tools/input.hpp"
+	"../../tools/files.hpp"
+
+1526986694 h:\eggfall_vs\eggfall_vs\ui\display\scoremanager.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"../../characters/hero.hpp"
+	"../../effects/sound.hpp"
+	"../../tools/files.hpp"
+	"../../tools/xmlReader.hpp"
+	"../../effects/effects.hpp"
+
+1526891324 h:\eggfall_vs\eggfall_vs\ui\menu\menuoptions.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuList.hpp"
+
+1526891335 h:\eggfall_vs\eggfall_vs\ui\menu\menupad.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../../tools/xmlReader.hpp"
+	"../../tools/files.hpp"
+	"../../tools/input.hpp"
+
+1526891339 h:\eggfall_vs\eggfall_vs\ui\menu\menuselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../../tools/input.hpp"
+
+1527774981 h:\eggfall_vs\eggfall_vs\ui\menu\menuheroselector.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"heroSelector.hpp"
+	"menuList.hpp"
+	"../display/keyboardKey.hpp"
+	"../../tools/files.hpp"
+	"../../tools/input.hpp"
+	"../../tools/xmlReader.hpp"
+	"../../effects/sound.hpp"
+
+1526891213 h:\eggfall_vs\eggfall_vs\ui\menu\heroselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuSelector.hpp"
+	"../../tools/input.hpp"
+	"../../tools/files.hpp"
+	"../../tools/xmlReader.hpp"
+	"../../effects/sound.hpp"
+	"../display/keyboardKey.hpp"
+
+1526891349 h:\eggfall_vs\eggfall_vs\ui\display\keyboardkey.hpp
+	<iostream>
+	<vector>
+	<string>
+	<math.h>
+	<SFML/Graphics.hpp>
+	"../../tools/files.hpp"
+
+1511438278 source:h:\eggfall_vs\eggfall_vs\ui\display\keyboardkey.cpp
+	"keyboardKey.hpp"
+
+1528129308 source:h:\eggfall_vs\eggfall_vs\ui\display\playerhud.cpp
+	"playerHUD.hpp"
+
+1528129227 h:\eggfall_vs\eggfall_vs\ui\display\playerhud.hpp
+	<iostream>
+	<vector>
+	<string>
+	<math.h>
+	<SFML/Graphics.hpp>
+	"../../tools/files.hpp"
+	"../../characters/hero.hpp"
+
+1526987398 source:h:\eggfall_vs\eggfall_vs\ui\display\scoremanager.cpp
+	"scoreManager.hpp"
+
+1517438663 source:h:\eggfall_vs\eggfall_vs\ui\menu\heroselector.cpp
+	"heroSelector.hpp"
+
+1527890813 source:h:\eggfall_vs\eggfall_vs\ui\menu\menuheroselector.cpp
+	"menuHeroSelector.hpp"
+
+1520196341 source:h:\eggfall_vs\eggfall_vs\ui\menu\menulist.cpp
+	"menuList.hpp"
+
+1512576232 source:h:\eggfall_vs\eggfall_vs\ui\menu\menuoptions.cpp
+	"menuOptions.hpp"
+
+1520172788 source:h:\eggfall_vs\eggfall_vs\ui\menu\menupad.cpp
+	"menuPad.hpp"
+
+1517438623 source:h:\eggfall_vs\eggfall_vs\ui\menu\menuselector.cpp
+	"menuSelector.hpp"
+
+1525873763 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\editor\editor.cpp
+	"editor.hpp"
+
+1526887924 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\editor\editor.hpp
+	<iostream>
+	<vector>
+	<functional>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../environment/maps.hpp"
+	"../tools/input.hpp"
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+	"../effects/effects.hpp"
+	"../environment/flourish/grass.hpp"
+	"../UI/menu/menuList.hpp"
+	"editorGroundModule.hpp"
+	"editorPlatformModule.hpp"
+	"editorBridgeModule.hpp"
+
+1526646253 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\maps.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<math.h>
+	<string>
+	<functional>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../tools/files.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/mapReader.hpp"
+	"../effects/effects.hpp"
+	"walkable/scalablePlatform.hpp"
+	"walkable/ladder.hpp"
+	"walkable/platform.hpp"
+	"walkable/bridge.hpp"
+	"flourish/teeter.hpp"
+	"flourish/grass.hpp"
+	"flourish/tree/firShort.hpp"
+	"flourish/tree/firLong.hpp"
+	"flourish/tree/cutTree.hpp"
+	"flourish/tree/roundTree.hpp"
+	"flourish/tree/oak.hpp"
+	"flourish/tree/shrub.hpp"
+	"flourish/tree/shrubSmall.hpp"
+	"flourish/tree/sakura.hpp"
+	"flourish/lamp/conicalLampA.hpp"
+	"flourish/lamp/conicalLampB.hpp"
+	"flourish/lamp/conicalLampC.hpp"
+	"flourish/lamp/pipeLamp.hpp"
+	"flourish/lamp/hatLamp.hpp"
+	"../editor/editor.hpp"
+
+1526979636 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\files.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+
+1526039158 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\box2dtools.hpp
+	<iostream>
+	<math.h>
+	<vector>
+	<typeinfo>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"utils.hpp"
+
+1526892701 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\utils.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<typeinfo>
+	<SFML/Graphics.hpp>
+
+1525774691 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\mapreader.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<SFML\Graphics.hpp>
+	"../tinyXML/tinyxml.h"
+	"../effects/colorScheme.hpp"
+	"files.hpp"
+	"xmlReader.hpp"
+
+1305393898 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1305393898 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1520870921 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\effects\colorscheme.hpp
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1518968632 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\xmlreader.hpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<fstream>
+	<vector>
+	"../tinyXML/tinyxml.h"
+	"files.hpp"
+
+1526038838 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\effects\effects.hpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	<math.h>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"animation.hpp"
+	"effectObj.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+
+1526908826 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\effects\animation.hpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	"../tools/utils.hpp"
+
+1526887827 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\effects\effectobj.hpp
+	<iostream>
+	<cstdlib>
+	<cmath>
+	<math.h>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"animation.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/utils.hpp"
+	"../UI/menu/menuList.hpp"
+
+1526887711 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\ui\menu\menulist.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../../tools/xmlReader.hpp"
+	"../../tools/input.hpp"
+	"../../tools/files.hpp"
+
+1520200819 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\input.hpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<fstream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	"files.hpp"
+	"xmlReader.hpp"
+	"utils.hpp"
+
+1525686465 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\walkable\scalableplatform.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../../tools/utils.hpp"
+	"../../tools/Box2DTools.hpp"
+
+1525686489 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\walkable\ladder.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"scalablePlatform.hpp"
+
+1525686482 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\walkable\platform.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"scalablePlatform.hpp"
+
+1525854857 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\walkable\bridge.hpp
+	<iostream>
+	<vector>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../../tools/utils.hpp"
+	"../../tools/Box2DTools.hpp"
+
+1526543043 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\teeter.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../../tools/files.hpp"
+	"../../tools/Box2DTools.hpp"
+	"../../effects/effects.hpp"
+	"../../effects/effectObj.hpp"
+
+1525686749 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\grass.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"../../tools/Box2DTools.hpp"
+	"../../tools/utils.hpp"
+	"../../tools/files.hpp"
+	"../../effects/colorScheme.hpp"
+
+1526483675 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\tree\firshort.hpp
+	"teeterTree.hpp"
+
+1526570878 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\tree\teetertree.hpp
+	"../teeter.hpp"
+
+1526483688 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\tree\firlong.hpp
+	"teeterTree.hpp"
+
+1526483662 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\tree\cuttree.hpp
+	"teeterTree.hpp"
+
+1526483651 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\tree\roundtree.hpp
+	"teeterTree.hpp"
+
+1526483891 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\tree\oak.hpp
+	"teeterTree.hpp"
+
+1526484392 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\tree\shrub.hpp
+	"teeterTree.hpp"
+
+1526484381 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\tree\shrubsmall.hpp
+	"teeterTree.hpp"
+
+1526483973 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\tree\sakura.hpp
+	"teeterTree.hpp"
+
+1526656000 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\lamp\conicallampa.hpp
+	"teeterLamp.hpp"
+
+1526656357 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\lamp\teeterlamp.hpp
+	"../teeter.hpp"
+
+1526655991 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\lamp\conicallampb.hpp
+	"teeterLamp.hpp"
+
+1526655987 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\lamp\conicallampc.hpp
+	"teeterLamp.hpp"
+
+1526656887 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\lamp\pipelamp.hpp
+	"teeterLamp.hpp"
+
+1526656931 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\lamp\hatlamp.hpp
+	"teeterLamp.hpp"
+
+1525687795 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\editor\editorgroundmodule.hpp
+	"editor.hpp"
+
+1525687802 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\editor\editorplatformmodule.hpp
+	"editor.hpp"
+	"editorGroundModule.hpp"
+
+1525961840 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\editor\editorbridgemodule.hpp
+	"editor.hpp"
+
+1525962247 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\editor\editorbridgemodule.cpp
+	"editorBridgeModule.hpp"
+
+1526892604 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\editor\editorgroundmodule.cpp
+	"editorGroundModule.hpp"
+
+1525859568 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\editor\editorplatformmodule.cpp
+	"editorPlatformModule.hpp"
+
+1520872825 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\effects\colorscheme.cpp
+	"colorScheme.hpp"
+
+1524337856 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\effects\effectobj.cpp
+	"effectObj.hpp"
+
+1526568938 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\effects\effects.cpp
+	"effects.hpp"
+
+1520203009 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\effects\sound.cpp
+	"sound.hpp"
+
+1511453720 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\effects\sound.hpp
+	<iostream>
+	<vector>
+	<random>
+	<ctime>
+	<SFML/Audio.hpp>
+	"../tools/settings.hpp"
+
+1518968598 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\settings.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	"xmlReader.hpp"
+
+1526148277 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\grass.cpp
+	"grass.hpp"
+
+1526656408 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\lamp\teeterlamp.cpp
+	"teeterLamp.hpp"
+
+1526646780 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\teeter.cpp
+	"teeter.hpp"
+
+1526571613 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\flourish\tree\teetertree.cpp
+	"teeterTree.hpp"
+
+1526039172 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\walkable\bridge.cpp
+	"bridge.hpp"
+
+1524238818 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\environment\walkable\scalableplatform.cpp
+	"scalablePlatform.hpp"
+
+1526028325 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\main.cpp
+	<stdlib.h>
+	<iostream>
+	<time.h>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"tools/settings.hpp"
+	"UI/mainGame.hpp"
+
+1526987413 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\ui\maingame.hpp
+	<iostream>
+	<vector>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../tools/Box2DTools.hpp"
+	"../tools/input.hpp"
+	"../tools/camera.hpp"
+	"../tools/xmlReader.hpp"
+	"../tools/settings.hpp"
+	"../effects/effects.hpp"
+	"../effects/sound.hpp"
+	"../projectiles/projectiles.hpp"
+	"../characters/wizard.hpp"
+	"../environment/maps.hpp"
+	"../editor/editor.hpp"
+	"menu/menuList.hpp"
+	"menu/menuOptions.hpp"
+	"menu/menuPad.hpp"
+	"menu/menuSelector.hpp"
+	"menu/menuHeroSelector.hpp"
+	"display/keyboardKey.hpp"
+	"display/scoreManager.hpp"
+
+1511438156 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\camera.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../characters/hero.hpp"
+
+1526987017 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\characters\hero.hpp
+	<math.h>
+	<string.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/Audio.hpp>
+	<Box2D/Box2D.h>
+	"../tools/input.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+	"../tools/utils.hpp"
+	"../effects/animation.hpp"
+	"../effects/effects.hpp"
+	"../effects/sound.hpp"
+	"../projectiles/projectiles.hpp"
+	"../UI/display/scoreManager.hpp"
+
+1526290732 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\projectiles\projectiles.hpp
+	<iostream>
+	<math.h>
+	<vector>
+	<random>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+	"../tools/utils.hpp"
+	"../characters/hero.hpp"
+	"../effects/effects.hpp"
+	"../effects/animation.hpp"
+	"../effects/sound.hpp"
+	"../environment/maps.hpp"
+	"spellObj.hpp"
+
+1526290633 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\projectiles\spellobj.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"../effects/animation.hpp"
+	"../effects/effects.hpp"
+	"../effects/sound.hpp"
+	"../characters/hero.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/utils.hpp"
+
+1526983094 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\ui\display\scoremanager.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"../../characters/hero.hpp"
+	"../../effects/sound.hpp"
+	"../../tools/files.hpp"
+	"../../tools/xmlReader.hpp"
+	"../../effects/effects.hpp"
+
+1526982632 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\characters\wizard.hpp
+	"hero.hpp"
+
+1526887724 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\ui\menu\menuoptions.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuList.hpp"
+
+1526887735 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\ui\menu\menupad.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../../tools/xmlReader.hpp"
+	"../../tools/files.hpp"
+	"../../tools/input.hpp"
+
+1526887739 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\ui\menu\menuselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../../tools/input.hpp"
+
+1526887637 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\ui\menu\menuheroselector.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"heroSelector.hpp"
+	"menuList.hpp"
+	"../display/keyboardKey.hpp"
+	"../../tools/files.hpp"
+	"../../tools/input.hpp"
+	"../../tools/xmlReader.hpp"
+	"../../effects/sound.hpp"
+
+1526887613 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\ui\menu\heroselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuSelector.hpp"
+	"../../tools/input.hpp"
+	"../../tools/files.hpp"
+	"../../tools/xmlReader.hpp"
+	"../../effects/sound.hpp"
+	"../display/keyboardKey.hpp"
+
+1526887749 f:\téléchargements\personnel\eggfall_vs\eggfall_vs\ui\display\keyboardkey.hpp
+	<iostream>
+	<vector>
+	<string>
+	<math.h>
+	<SFML/Graphics.hpp>
+	"../../tools/files.hpp"
+
+1526481126 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\projectiles\projectiles.cpp
+	"projectiles.hpp"
+
+1526290843 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\projectiles\spellobj.cpp
+	"spellObj.hpp"
+
+1457809226 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\resource.rc
+
+1305393898 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1305393898 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1305393898 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1305393898 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1526025083 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\box2dtools.cpp
+
+1519491667 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\camera.cpp
+	"camera.hpp"
+
+1525175632 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\input.cpp
+	"input.hpp"
+
+1525774845 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\mapreader.cpp
+	"mapReader.hpp"
+
+1518968644 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\settings.cpp
+	"settings.hpp"
+
+1520421362 source:f:\téléchargements\personnel\eggfall_vs\eggfall_vs\tools\xmlreader.cpp
+	"xmlReader.hpp"
+
+1528123069 source:h:\eggfall_vs\eggfall_vs\characters\ai.cpp
+	"AI.hpp"
+
+1527774455 h:\eggfall_vs\eggfall_vs\characters\ai.hpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/utils.hpp"
+	"../tools/input.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/graph.hpp"
+	"../projectiles/projectiles.hpp"
+	"../characters/hero.hpp"
+
+1527675050 h:\eggfall_vs\eggfall_vs\tools\graph.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	"utils.hpp"
+
+1527675289 source:h:\eggfall_vs\eggfall_vs\tools\graph.cpp
+	"graph.hpp"
+
+1528301991 h:\eggfall_vs\eggfall_vs\projectiles\projectileobj.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"../effects/animation.hpp"
+	"../effects/effects.hpp"
+	"../effects/sound.hpp"
+	"../characters/hero.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/utils.hpp"
+
+1528302645 source:h:\eggfall_vs\eggfall_vs\projectiles\projectileobj.cpp
+	"projectileObj.hpp"
+

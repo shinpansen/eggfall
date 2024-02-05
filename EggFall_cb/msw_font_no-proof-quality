@@ -1,0 +1,569 @@
+#include "hero.hpp"
+
+static const float SCALE = 30.f;
+static const float WALKING_SPEED = 10.f;
+static const float RUNNING_SPEED = 15.f;
+static const float FALLING_SPEED = 20.f;
+
+static const short GROUND_ENTITY = 0x0001;
+static const short PLATFORM_ENTITY = 0x0002;
+static const short PLATFORM2_ENTITY = 0x0004;
+static const short BODY_ENTITY = 0x0008;
+
+using namespace std;
+using namespace sf;
+
+hero::hero()
+{
+}
+
+hero::hero(Vector2i pos, b2World* world, input* input, effects* effectBox, spells* spellBox, ladder* ladderBox)
+{
+    //Variable
+    _onTheFloor = false;
+    _lastOnTheFloor = false;
+    _hasJumped = false;
+    _hasRoll = false;
+    _hasAttacked = false;
+    _showDust = true;
+    _stunned = false;
+    _canWallJump = 0;
+    _rolling = 0;
+    _rollingCooldown = 0;
+    _attacking = 0;
+    _attackingCooldown = 0;
+    _attackingAnimation = 0;
+    _hooked = 0;
+    _canClimb = 0;
+    _frameDust = 0;
+    _collisionType = 0;
+    _ladderTop = 0;
+    _stunned = 0;
+
+    //Vectors
+    _speed = Vector2f(0.f, 0.f); //In Box2D unit
+    _maxSpeed = Vector2f(RUNNING_SPEED, FALLING_SPEED);
+    _position = Vector2f(pos.x, pos.y); //In pixel unit
+    _hookedPoint = Vector2f(0,0);
+    _ladderPos = Vector2f(0,0);
+    _stunDirection = Vector2f(0,0);
+
+    //Objects
+    _input = input;
+    _effectBox = effectBox;
+    _spellBox = spellBox;
+    _ladderBox = ladderBox;
+
+    //Box2D
+    _world = world;
+    _body = Box2DTools::CreateRectangleBox(_world, pos, 20, 35, 0.1, 0, 0, 4);
+    _userData = _input->GetPlayerNumber();
+    _body->SetUserData(&_userData);
+
+    //Sprite
+    if (!_texture.loadFromFile(_files.heroTile))
+    {
+        cout << "Unable to find hero texture. Stopping execution." << endl;
+        exit(1);
+    }
+    else
+    {
+        _sprite.setTexture(_texture);
+        _sprite.setOrigin(26, 56);
+        _animation = animation(&_sprite, 0.1, 56, 56, 6, 15, 0);
+    }
+}
+
+void hero::UpdateVariables()
+{
+    //Body speed + position
+    _speed = Vector2f(_body->GetLinearVelocity().x, _body->GetLinearVelocity().y);
+    _position = Vector2f(_body->GetPosition().x*SCALE, _body->GetPosition().y*SCALE);
+
+    //Wall jump duration
+    if(_canWallJump > 0)
+        _canWallJump--;
+    else if(_canWallJump < 0)
+        _canWallJump++;
+
+    //Testing if body on the floor
+    _lastOnTheFloor = _onTheFloor;
+    _onTheFloor = false;
+    for(double i=_position.x-10.3 ; i<_position.x+10.3 ; i+=0.1)
+    {
+        if(Box2DTools::TestCollisionPoint(_world, b2Vec2(i/SCALE, (_position.y+18)/SCALE), true, &_collisionType) && _speed.y >= -0.1)
+        {
+            _onTheFloor = true;
+            _input->LockKey("LEFT", 0);
+            _input->LockKey("RIGHT", 0);
+            _canWallJump = 0;
+            break;
+        }
+    }
+
+    //Show the falling and jumping dust if there's a collision in the middle of the character
+    _showDust = Box2DTools::TestCollisionPoint(_world, b2Vec2(_position.x/SCALE, (_position.y+18)/SCALE), true, &_collisionType);
+
+    //Testing if body can wall jump
+    if(!_onTheFloor && _hooked == 0 && _input->isKeyPressed("LEFT") &&
+       Box2DTools::TestCollisionPoint(_world, b2Vec2((_position.x-11)/SCALE, (_position.y-14)/SCALE), false, &_collisionType) &&
+       Box2DTools::TestCollisionPoint(_world, b2Vec2((_position.x-11)/SCALE, (_position.y+14)/SCALE), false, &_collisionType))
+       _canWallJump = 15;
+    else if(!_onTheFloor && _hooked == 0 && _input->isKeyPressed("RIGHT") &&
+       Box2DTools::TestCollisionPoint(_world, b2Vec2((_position.x+11)/SCALE, (_position.y-14)/SCALE), false, &_collisionType) &&
+       Box2DTools::TestCollisionPoint(_world, b2Vec2((_position.x+11)/SCALE, (_position.y+14)/SCALE), false, &_collisionType))
+       _canWallJump = -15;
+
+    //Testing if body can hook to a wall
+    if(!_onTheFloor && _speed.y >= -0.1)
+    {
+        b2Vec2 posLeft = b2Vec2(_body->GetPosition().x-(11/SCALE), _body->GetPosition().y-(14/SCALE));
+        b2Vec2 posRight = b2Vec2(_body->GetPosition().x+(11/SCALE), _body->GetPosition().y-(14/SCALE));
+        b2Vec2 posGround = b2Vec2(_body->GetPosition().x, _body->GetPosition().y+(26/SCALE));
+        if(!Box2DTools::TestCollisionPoint(_world, posGround, true, &_collisionType))
+        {
+            _hooked = Box2DTools::TestHookPoint(_world, posLeft, &_hookedPoint);
+            if(_hooked == 0)
+                _hooked = Box2DTools::TestHookPoint(_world, posRight, &_hookedPoint);
+            if(_hooked != 0 && _speed.y >= 0)
+            {
+                _canWallJump = 0;
+                _body->SetLinearVelocity(b2Vec2(0,0));
+                _body->SetTransform(b2Vec2(_hookedPoint.x + ((_hooked > 0 ? 11 : -11)/SCALE), _hookedPoint.y+(14/SCALE)), 0);
+                _speed = Vector2f(_body->GetLinearVelocity().x, _body->GetLinearVelocity().y);
+                //_body->SetActive(false);
+                _body->ApplyForce(b2Vec2(0.f,-42*_body->GetMass()), _body->GetWorldCenter());
+            }
+        }
+    }
+    else
+    {
+        //_body->SetActive(true);
+        _body->ApplyForce(b2Vec2(0.f,0*_body->GetMass()), _body->GetWorldCenter());
+        _hooked = 0;
+    }
+
+    //Testing if hero can climb to a ladder
+    if(_canWallJump == 0 && _speed.y > -10)
+    {
+        if(_canClimb == 10 || (_canClimb != 10 && _input->isKeyPressed("UP")))
+        {
+            RectangleShape shape(Vector2f(20,35));
+            shape.setOrigin(10,18);
+            shape.setPosition(_position);
+            _canClimb = _ladderBox->TestCollision(&shape, &_ladderPos, &_ladderTop)*10;
+        }
+        else if(_canClimb > 0)
+            _canClimb --;
+    }
+    else if(_canClimb > 0)
+            _canClimb --;
+
+    if(_canClimb == 10 && _position.x != _ladderPos.x)
+    {
+        double gapX = fabs(_ladderPos.x - _position.x)/5;
+        double newPosX = _position.x > _ladderPos.x ? _position.x - gapX : _position.x + gapX;
+        _body->SetTransform(b2Vec2(newPosX/SCALE, _position.y/SCALE), 0);
+    }
+
+    //Rolling duration
+    if(_rolling != 0)
+        _rolling += _rolling < 0 ? 1 : -1;
+    if(_rollingCooldown != 0)
+        _rollingCooldown += _rollingCooldown < 0 ? 1 : -1;
+
+    //Attack duration
+    if(_attacking != 0)
+        _attacking += _attacking < 0 ? 1 : -1;
+    if(_attackingCooldown != 0)
+        _attackingCooldown += _attackingCooldown < 0 ? 1 : -1;
+
+    //Direction if stunned
+    if(_stunned > 0)
+    {
+        if((_hooked != 0 ||_canClimb != 0) && fabs(_stunDirection.y) <= 2)
+        {
+            _stunDirection.x = 0;
+            _stunDirection.y = 10;
+            _body->ApplyForce(b2Vec2(0.f,42*_body->GetMass()), _body->GetWorldCenter());
+        }
+
+        _hooked = 0;
+        _canClimb = 0;
+        _canWallJump = 0;
+        _body->SetLinearVelocity(b2Vec2(_stunDirection.x, _stunDirection.y));
+    }
+
+
+    //Stun duration
+    if(_stunned > 0)
+        _stunned--;
+
+    //Limiting running speed
+    if(_body->GetLinearVelocity().x > _maxSpeed.x)
+        _body->SetLinearVelocity(b2Vec2(_body->GetLinearVelocity().x-1, _body->GetLinearVelocity().y));
+    else if(_body->GetLinearVelocity().x < -_maxSpeed.x)
+        _body->SetLinearVelocity(b2Vec2(_body->GetLinearVelocity().x+1, _body->GetLinearVelocity().y));
+
+    //Limiting falling speed
+    if(_body->GetLinearVelocity().y > _maxSpeed.y && _canClimb != 10)
+        _body->SetLinearVelocity(b2Vec2(_body->GetLinearVelocity().x, _maxSpeed.y));
+
+    //Body speed + position (re-update)
+    _speed = Vector2f(_body->GetLinearVelocity().x, _body->GetLinearVelocity().y);
+    _position = Vector2f(_body->GetPosition().x*SCALE, _body->GetPosition().y*SCALE);
+}
+
+void hero::PerformEffects()
+{
+    //Animation of falling - crush sprite + dust
+    if(!_lastOnTheFloor && _onTheFloor)
+    {
+        _animation.PerformFallingScale();
+        if(_showDust)
+        {
+            _effectBox->AddEffect(Vector2i(_position.x, _position.y+8), 0.25, 35, 25, 6, 3, false);
+            _frameDust = 6;
+        }
+    }
+
+    //Dust of jumping
+    if(_lastOnTheFloor && !_onTheFloor && _hasJumped)
+    {
+        _animation.PerformJumpingScale();
+        _effectBox->AddEffect(Vector2i(_position.x, _position.y+17), 0.25, 35, 25, 6, 2, false);
+        _frameDust = 6;
+    }
+
+    //Dust moving
+    if(fabs(_speed.x) > 2 && _onTheFloor && _canWallJump == 0 && _frameDust == 0)
+    {
+        _frameDust = fabs(_speed.x) > 14 ? 3 : 4;
+        int pos = _speed.x > 0 ? -10 : 10;
+        _effectBox->AddEffect(Vector2i(_position.x+pos, _position.y+5),
+                              0.25, 35, 25, 6, fabs(_speed.x) > 14 ? 0 : 1, _speed.x < 0);
+    }
+
+    //Dust wall sliding
+    if(fabs(_canWallJump) > 0 && !_onTheFloor && _speed.y > 1 && _frameDust == 0)
+    {
+        _frameDust = 4;
+        int pos = _canWallJump > 0 ? 6 : -6;
+        _effectBox->AddEffect(Vector2i(_position.x+pos, _position.y+5),
+                              0.3, 35, 25, 6, 4, _canWallJump < 0);
+        _effectBox->AddEffect(Vector2i(_position.x+pos, _position.y+20),
+                              0.2, 35, 25, 6, 4, _canWallJump < 0);
+    }
+
+    //Counter
+    if(_frameDust > 0)
+        _frameDust--;
+}
+
+void hero::Move()
+{
+    //Unlock keys at each frame
+    _input->PerformUnlockKeys();
+
+    //Setting acceleration/deceleration
+    int scalingSpeed = (!_onTheFloor || _rolling != 0 || _canClimb != 0) ? 1 : 1.5;
+    float scalingBrake = _rolling != 0 || _attacking != 0 ? 0.5 : 1;
+
+    //Running
+    if(_input->isKeyPressed("RUN") || _rolling != 0)
+        _maxSpeed.x = RUNNING_SPEED;
+    else if(_onTheFloor || _canClimb > 0)
+        _maxSpeed.x = WALKING_SPEED;
+
+    //Rolling
+    if(_input->isKeyPressed("ROLL") && _attacking == 0 &&
+       _rolling == 0 && _rollingCooldown == 0 &&
+       !_hasRoll && _canClimb != 10)
+    {
+        int signe = _animation.GetReversed() ? -1 : 1;
+        _rolling = signe * 22;
+        _rollingCooldown = signe * 50;
+        if(_speed.y >= 0)
+        {
+            _body->SetLinearVelocity(b2Vec2(_speed.x, 0));
+            _speed.y = 0;
+        }
+    }
+
+    //Attacking
+    if(_input->isKeyPressed("ATTACK") && _rolling == 0 &&
+       _attacking == 0 && _attackingCooldown == 0 &&
+       !_hasAttacked && _canClimb != 10 && _hooked == 0)
+    {
+        int signe = _animation.GetReversed() ? -1 : 1;
+        _attacking = signe * 22;
+        _attackingCooldown = signe * 36;
+
+        //Spell direction
+        Vector2i spellPos;
+        Vector2f spellSpeed;
+        int spellAngle = 0;
+        if(!_input->isKeyPressed("LEFT") && !_input->isKeyPressed("RIGHT"))
+        {
+            if(_input->isKeyPressed("UP"))
+            {
+                spellPos = Vector2i(_position.x, _position.y-45-_speed.y);
+                spellSpeed = Vector2f(0, -15);
+                spellAngle = 90;
+                _attackingAnimation = 3;
+            }
+            else if(_input->isKeyPressed("DOWN") && !_onTheFloor)
+            {
+                spellPos = Vector2i(_position.x, _position.y+45+_speed.y);
+                spellSpeed = Vector2f(0, 15);
+                spellAngle = 90;
+                _attackingAnimation = 2;
+            }
+            else
+            {
+                spellPos = Vector2i(_position.x+(signe*(38+fabs(_speed.x))), _position.y);
+                spellSpeed = Vector2f(fabs(_speed.x) < 10 ? signe*12 : _speed.x + (2*signe), 0);
+                _attackingAnimation = 1;
+            }
+        }
+        else
+        {
+            int localSpeed = fabs(_speed.x) < 10 ? signe*12 : _speed.x + (2*signe);
+            if(_input->isKeyPressed("UP"))
+            {
+                spellPos = Vector2i(_position.x+(signe*(35+fabs(_speed.x))), _position.y-45+_speed.y);
+                spellSpeed = Vector2f(localSpeed, -fabs(localSpeed));
+                spellAngle = 45;
+                _attackingAnimation = 1;
+            }
+            else if(_input->isKeyPressed("DOWN"))
+            {
+                spellPos = Vector2i(_position.x+(signe*(35+fabs(_speed.x))), _position.y+45+_speed.y);
+                spellSpeed = Vector2f(localSpeed, fabs(localSpeed));
+                spellAngle = 45;
+                _attackingAnimation = 1;
+            }
+            else
+            {
+                spellPos = Vector2i(_position.x+(signe*(38+fabs(_speed.x))), _position.y);
+                spellSpeed = Vector2f(localSpeed, 0);
+                _attackingAnimation = 1;
+            }
+        }
+
+        //Creating spell
+        _spellBox->AddSpell(spellPos, 0.3, 35, 25, 6, 1, signe < 0, spellAngle, spellSpeed, Color(255,50,50,100));
+        if(_speed.y >= 0)
+        {
+            _body->SetLinearVelocity(b2Vec2(_speed.x, 0));
+            _speed.y = 0;
+        }
+    }
+
+    //Locking rolling key if pressed once
+    if(_input->isKeyPressed("ROLL"))
+        _hasRoll = true;
+    else
+        _hasRoll = false;
+
+    //Unhooking
+    if((_hooked != 0 && _input->isKeyPressed("DOWN")) ||
+       (_hooked < 0 && _input->isKeyPressed("LEFT")) ||
+       (_hooked > 0 && _input->isKeyPressed("RIGHT")))
+    {
+        _hooked = 0;
+        _body->ApplyForce(b2Vec2(0.f,42*_body->GetMass()), _body->GetWorldCenter());
+        _body->SetLinearVelocity(b2Vec2(_speed.x, 5));
+    }
+
+    //Moving
+    if(_canClimb > 0 && (_input->isKeyPressed("LEFT") || _input->isKeyPressed("RIGHT")))
+    {
+        _body->ApplyForce(b2Vec2(0.f,0*_body->GetMass()), _body->GetWorldCenter());
+        _canClimb --;
+    }
+    if(_input->isKeyPressed("LEFT") && _speed.x - scalingSpeed > -_maxSpeed.x && _rolling == 0 && _attacking == 0)
+        _body->SetLinearVelocity(b2Vec2(_speed.x - scalingSpeed, _speed.y));
+    else if(_input->isKeyPressed("RIGHT") && _speed.x + scalingSpeed < _maxSpeed.x && _rolling == 0 && _attacking == 0)
+        _body->SetLinearVelocity(b2Vec2(_speed.x + scalingSpeed, _speed.y));
+    else if((!_input->isKeyPressed("LEFT") || _rolling != 0 || _attacking != 0) && _speed.x <= -scalingBrake)
+        _body->SetLinearVelocity(b2Vec2(_speed.x+scalingBrake, _speed.y));
+    else if((!_input->isKeyPressed("RIGHT") || _rolling != 0 || _attacking != 0) && _speed.x >= scalingBrake)
+        _body->SetLinearVelocity(b2Vec2(_speed.x-scalingBrake, _speed.y));
+    else if((!_input->isKeyPressed("LEFT") || !_input->isKeyPressed("RIGHT") || _rolling != 0 || _attacking != 0) &&
+            fabs(_speed.x) < scalingBrake)
+        _body->SetLinearVelocity(b2Vec2(0, _speed.y));
+
+    if(!_hasJumped && _rolling == 0)
+    {
+        //Jumping - leaving platform
+        if(_onTheFloor && (_collisionType == PLATFORM_ENTITY || _collisionType == PLATFORM2_ENTITY) &&
+           _input->isKeyPressed("JUMP") && _input->isKeyPressed("DOWN"))
+        {
+            _onTheFloor = _lastOnTheFloor = false;
+            _body->SetTransform(b2Vec2(_body->GetPosition().x, _body->GetPosition().y+0.6), 0);
+        }
+        else if((_onTheFloor || _canClimb > 0) && _input->isKeyPressed("JUMP"))
+        {
+            _body->ApplyForce(b2Vec2(0.f,0*_body->GetMass()), _body->GetWorldCenter());
+            _canClimb = 0;
+            _body->SetLinearVelocity(b2Vec2(_speed.x, -18-fabs(_speed.x/5)));
+        }
+        else if(!_onTheFloor && !_input->isKeyPressed("JUMP") && _speed.y < -7)
+            _body->SetLinearVelocity(b2Vec2(_speed.x, -7));
+        else if(_hooked != 0 && _input->isKeyPressed("JUMP"))
+        {
+            _body->ApplyForce(b2Vec2(0.f,0*_body->GetMass()), _body->GetWorldCenter());
+            _hooked = 0;
+            _body->SetLinearVelocity(b2Vec2(_speed.x, -18));
+        }
+
+        //Wall jump
+        if(_canWallJump != 0 && _input->isKeyPressed("JUMP"))
+        {
+            if((_input->isKeyPressed("LEFT") && _canWallJump > 0) ||
+               (_input->isKeyPressed("RIGHT") && _canWallJump < 0))
+                _body->SetLinearVelocity(b2Vec2(_canWallJump > 0 ? 12 : -12, -16));
+            else
+            {
+                _maxSpeed = Vector2f(RUNNING_SPEED, FALLING_SPEED);
+                _body->SetLinearVelocity(b2Vec2(_canWallJump > 0 ? 20 : -20, -12));
+            }
+            _canWallJump = 0;
+        }
+    }
+
+    //Climbing on ladders
+    if(_canClimb == 10)
+    {
+        if(_input->isKeyPressed("UP") && _position.y-22 > _ladderTop)
+        {
+            _body->ApplyForce(b2Vec2(0.f,0*_body->GetMass()), _body->GetWorldCenter());
+            _body->SetLinearVelocity(b2Vec2(_body->GetLinearVelocity().x, -5));
+        }
+        else if(_input->isKeyPressed("DOWN"))
+        {
+            _body->ApplyForce(b2Vec2(0.f,0*_body->GetMass()), _body->GetWorldCenter());
+            _body->SetLinearVelocity(b2Vec2(_body->GetLinearVelocity().x, 5));
+        }
+        else
+        {
+            _body->ApplyForce(b2Vec2(0.f,-42*_body->GetMass()), _body->GetWorldCenter());
+            _body->SetLinearVelocity(b2Vec2(_body->GetLinearVelocity().x, 0));
+        }
+    }
+
+    //Locking jumping key if pressed once
+    if(_input->isKeyPressed("JUMP"))
+        _hasJumped = true;
+    else
+        _hasJumped = false;
+
+    if(fabs(_canWallJump) > 0)
+        _maxSpeed.y = 5.f;
+    else
+        _maxSpeed.y = FALLING_SPEED;
+}
+
+void hero::AnimeSprite(RenderWindow* window)
+{
+    //Animation speed
+    if(_attacking != 0)
+        _animation.SetFrameDelay(0.45);
+    else if((_animation.GetAnimation() == 7 && _maxSpeed.x > WALKING_SPEED+1) || _rolling != 0 || _hooked != 0)
+        _animation.SetFrameDelay(0.25);
+    else if(_canClimb == 10)
+        _animation.SetFrameDelay(0.20);
+    else
+        _animation.SetFrameDelay(0.15);
+
+    //Reverse sprite
+    if(_canWallJump == 0 && _rolling == 0 && _attacking == 0 && _hooked == 0 && _canClimb != 10)
+    {
+        if(_input->isKeyPressed("LEFT"))
+            _animation.ReverseSprite(true);
+        else if(_input->isKeyPressed("RIGHT"))
+            _animation.ReverseSprite(false);
+    }
+
+    //All animation
+    if(_canClimb == 10)
+    {
+        _animation.ReverseSprite(false);
+        if(_speed.y != 0)
+            _animation.SetAnimation(9,0);
+        else
+            _animation.SetAnimation(10,0);
+    }
+    else if(_hooked != 0)
+    {
+        _animation.SetAnimation(8, 4);
+        _animation.ReverseSprite(_hooked > 0);
+    }
+    else if(_attacking != 0)
+    {
+        if(_attackingAnimation == 1)
+            _animation.SetAnimation(_canWallJump == 0 ? 11 : 12, 4);
+        else if(_attackingAnimation == 2)
+            _animation.SetAnimation(13, 4);
+        else
+            _animation.SetAnimation(14, 4);
+        _animation.ReverseSprite(_attacking < 0);
+    }
+    else if(_rolling != 0)
+    {
+        _animation.SetAnimation(6, 0);
+        _animation.ReverseSprite(_rolling < 0);
+    }
+    else if(_canWallJump != 0)
+    {
+        _animation.ReverseSprite(_canWallJump < 0);
+        _animation.SetAnimation(5, 0);
+    }
+    else if(!_onTheFloor && _speed.y < 0)
+        _animation.SetAnimation(2, 2);
+    else if(!_onTheFloor && _speed.y >= 0)
+        _animation.SetAnimation(3, 3);
+    else if(_onTheFloor && _input->isKeyPressed("LEFT") && _speed.x > 0.1)
+        _animation.SetAnimation(4, 0);
+    else if(_onTheFloor && _input->isKeyPressed("RIGHT") && _speed.x < -0.1)
+        _animation.SetAnimation(4, 0);
+    else if(fabs(_speed.x) > 0.5)
+        _animation.SetAnimation(fabs(_speed.x) > WALKING_SPEED+1 ? 7 : 1, 0);
+    else
+        _animation.SetAnimation(0, 0);
+
+    //Perform animation + position + drawing
+    _animation.PerformAnimation();
+    _sprite.setPosition(_position.x, _position.y+17);
+    window->draw(_sprite);
+}
+
+void hero::Display(RenderWindow* window)
+{
+    UpdateVariables();
+    if(_stunned == 0) { Move(); }
+    PerformEffects();
+    AnimeSprite(window);
+}
+
+b2Body* hero::GetBody()
+{
+    return _body;
+}
+
+Vector2f hero::GetPosition()
+{
+    return _position;
+}
+
+int hero::isCounteracting()
+{
+    return fabs(_rolling) > 10 ? _rolling/fabs(_rolling) : 0;
+}
+
+void hero::SetStunned(Vector2f stunDirection, int stunDuration)
+{
+    _stunned = stunDuration;
+    _stunDirection = stunDirection;
+}

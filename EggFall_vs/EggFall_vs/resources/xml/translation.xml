@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<translation>
+	<menuMain language="Français" id="MenuMainA">
+		Versus
+	</menuMain>
+	<menuMain language="English" id="MenuMainA">
+		Versus
+	</menuMain>
+	<menuMain language="Español" id="MenuMainA">
+		Versus
+	</menuMain>
+	<menuMain language="Français" id="MenuMainB">
+		Options
+	</menuMain>
+	<menuMain language="English" id="MenuMainB">
+		Settings
+	</menuMain>
+	<menuMain language="Español" id="MenuMainB">
+		Configuracion
+	</menuMain>
+	<menuMain language="Français" id="MenuMainC">
+		Commandes
+	</menuMain>
+	<menuMain language="English" id="MenuMainC">
+		Controls
+	</menuMain>
+	<menuMain language="Español" id="MenuMainC">
+		Controles
+	</menuMain>
+	<menuMain language="Français" id="MenuMainD">
+		Quitter le jeu
+	</menuMain>
+	<menuMain language="English" id="MenuMainD">
+		Quit game
+	</menuMain>
+	<menuMain language="Español" id="MenuMainD">
+		Salir el juego
+	</menuMain>
+	////////////////////////////////////////////////////////////
+	<menuControls language="Français" id="MenuControlsA">
+		Afficher commandes manette
+	</menuControls>
+	<menuControls language="English" id="MenuControlsA">
+		Show gamepad controls
+	</menuControls>
+	<menuControls language="Español" id="MenuControlsA">
+		Visualizacion controlador 
+	</menuControls>
+	<menuControls language="Français" id="MenuControlsB">
+		Configurer clavier joueur 1
+	</menuControls>
+	<menuControls language="English" id="MenuControlsB">
+		Configure player 1 keyboard
+	</menuControls>
+	<menuControls language="Español" id="MenuControlsB">
+		Configurar teclado jugador 1
+	</menuControls>
+	<menuControls language="Français" id="MenuControlsC">
+		Configurer clavier joueur 2
+	</menuControls>
+	<menuControls language="English" id="MenuControlsC">
+		Configure player 2 keyboard
+	</menuControls>
+	<menuControls language="Español" id="MenuControlsC">
+		Configurar teclado jugador 2
+	</menuControls>
+	<menuControls language="Français" id="MenuControlsD">
+		Configurer clavier joueur 3
+	</menuControls>
+	<menuControls language="English" id="MenuControlsD">
+		Configure player 3 keyboard
+	</menuControls>
+	<menuControls language="Español" id="MenuControlsD">
+		Configurar teclado jugador 3
+	</menuControls>
+	<menuControls language="Français" id="MenuControlsE">
+		Configurer clavier joueur 4
+	</menuControls>
+	<menuControls language="English" id="MenuControlsE">
+		Configure player 4 keyboard
+	</menuControls>
+	<menuControls language="Español" id="MenuControlsE">
+		Configurar teclado jugador 4
+	</menuControls>
+	<menuControls language="Français" id="MenuControlsF">
+		Retour
+	</menuControls>
+	<menuControls language="English" id="MenuControlsF">
+		Back
+	</menuControls>
+	<menuControls language="Español" id="MenuControlsF">
+		Volver
+	</menuControls>
+	////////////////////////////////////////////////////////////
+	<key language="Français" id="JUMP">
+		Sauter
+	</key>
+	<key language="English" id="JUMP">
+		Jump
+	</key>
+	<key language="Español" id="JUMP">
+		Saltar
+	</key>
+	<key language="Français" id="ATTACK">
+		Attaquer
+	</key>
+	<key language="English" id="ATTACK">
+		Attack
+	</key>
+	<key language="Español" id="ATTACK">
+		Ataque
+	</key>
+	<key language="Français" id="COUNTERACT">
+		Contrer
+	</key>
+	<key language="English" id="COUNTERACT">
+		Counteract
+	</key>
+	<key language="Español" id="COUNTERACT">
+		Contrarrestar
+	</key>
+	<key language="Français" id="DASH">
+		Dash
+	</key>
+	<key language="English" id="DASH">
+		Dash
+	</key>
+	<key language="Español" id="DASH">
+		Dash
+	</key>
+	<key language="Français" id="AIM">
+		Viser
+	</key>
+	<key language="English" id="AIM">
+		Aim
+	</key>
+	<key language="Español" id="AIM">
+		Apuntar
+	</key>
+	<key language="Français" id="UP">
+		Haut
+	</key>
+	<key language="English" id="UP">
+		Up
+	</key>
+	<key language="Español" id="UP">
+		Arriba
+	</key>
+	<key language="Français" id="DOWN">
+		Bas
+	</key>
+	<key language="English" id="DOWN">
+		Down
+	</key>
+	<key language="Español" id="DOWN">
+		Abajo
+	</key>
+	<key language="Français" id="LEFT">
+		Gauche
+	</key>
+	<key language="English" id="LEFT">
+		Left
+	</key>
+	<key language="Español" id="LEFT">
+		Izquierda
+	</key>
+	<key language="Français" id="RIGHT">
+		Droite
+	</key>
+	<key language="English" id="RIGHT">
+		Right
+	</key>
+	<key language="Español" id="RIGHT">
+		Derecha
+	</key>
+	<key language="Français" id="BACK">
+		Retour
+	</key>
+	<key language="English" id="BACK">
+		Back
+	</key>
+	<key language="Español" id="BACK">
+		Volver
+	</key>
+	<key2 language="Français" id="MOVE">
+		Se Deplacer
+	</key2>
+	<key2 language="English" id="MOVE">
+		Move
+	</key2>
+	<key2 language="Español" id="MOVE">
+		Desplazarse
+	</key2>
+	<key2 language="Français" id="PAUSE">
+		Pause
+	</key2>
+	<key2 language="English" id="PAUSE">
+		Pause
+	</key2>
+	<key2 language="Español" id="PAUSE">
+		Pausa
+	</key2>
+	<key2 language="Français" id="VALID">
+		Valider
+	</key2>
+	<key2 language="English" id="VALID">
+		Valid
+	</key2>
+	<key2 language="Español" id="VALID">
+		Validar
+	</key2>
+	<key2 language="Français" id="BACK">
+		Retour
+	</key2>
+	<key2 language="English" id="BACK">
+		Back
+	</key2>
+	<key2 language="Español" id="BACK">
+		Volver
+	</key2>
+	<key2 language="Français" id="PRESS">
+		appuyer sur
+	</key2>
+	<key2 language="English" id="PRESS">
+		PRESS
+	</key2>
+	<key2 language="Español" id="PRESS">
+		Apoyar sobre
+	</key2>
+	////////////////////////////////////////////////////////////
+	<pause language="Français" id="PauseA">
+		Reprendre
+	</pause>
+	<pause language="English" id="PauseA">
+		Resume
+	</pause>
+	<pause language="Español" id="PauseA">
+		Continuar
+	</pause>
+	<pause language="Français" id="PauseB">
+		Recommencer le combat
+	</pause>
+	<pause language="English" id="PauseB">
+		Restart fight
+	</pause>
+	<pause language="Español" id="PauseB">
+		Reiniciar lucha
+	</pause>
+	<pause language="Français" id="PauseC">
+		Options
+	</pause>
+	<pause language="English" id="PauseC">
+		Settings
+	</pause>
+	<pause language="Español" id="PauseC">
+		Configuracion
+	</pause>
+	<pause language="Français" id="PauseD">
+		Commandes
+	</pause>
+	<pause language="English" id="PauseD">
+		Controls
+	</pause>
+	<pause language="Español" id="PauseD">
+		Controles
+	</pause>
+	<pause language="Français" id="PauseE">
+		Menu Principal
+	</pause>
+	<pause language="English" id="PauseE">
+		Main Menu
+	</pause>
+	<pause language="Español" id="PauseE">
+		Menu Principal
+	</pause>
+	<pause language="Français" id="PauseF">
+		Quitter le jeu
+	</pause>
+	<pause language="English" id="PauseF">
+		Quit game
+	</pause>
+	<pause language="Español" id="PauseF">
+		Salir el juego
+	</pause>
+	///////////////////////////////////////////////////////////
+	<yesno language="Français" id="yesnoA">
+		Oui
+	</yesno>
+	<yesno language="English" id="yesnoA">
+		Yes
+	</yesno>
+	<yesno language="Español" id="yesnoA">
+		Si
+	</yesno>
+	<yesno language="Français" id="yesnoB">
+		Non
+	</yesno>
+	<yesno language="English" id="yesnoB">
+		No
+	</yesno>
+	<yesno language="Español" id="yesnoB">
+		No
+	</yesno>
+	///////////////////////////////////////////////////////////
+	<miscellaneous language="Français" id="OR">
+		OU
+	</miscellaneous>
+	<miscellaneous language="English" id="OR">
+		OR
+	</miscellaneous>
+	<miscellaneous language="Español" id="OR">
+		O
+	</miscellaneous>
+	<miscellaneous language="Français" id="Ready">
+		PRET !
+	</miscellaneous>
+	<miscellaneous language="English" id="Ready">
+		READY !
+	</miscellaneous>
+	<miscellaneous language="Español" id="Ready">
+		LISTO !
+	</miscellaneous>
+	<miscellaneous language="Français" id="heroSelect">
+		SELECTION DE PERSONNAGE
+	</miscellaneous>
+	<miscellaneous language="English" id="heroSelect">
+		CHARACTER SELECT
+	</miscellaneous>
+	<miscellaneous language="Español" id="heroSelect">
+		SELECCION DE CARACTER
+	</miscellaneous>
+	<miscellaneous language="Français" id="waitingJoin">
+		ATTENTE DES JOUEURS
+	</miscellaneous>
+	<miscellaneous language="English" id="waitingJoin">
+		WAITING PLAYERS TO JOIN
+	</miscellaneous>
+	<miscellaneous language="Español" id="waitingJoin">
+		ESPERA PARA JUGADORES
+	</miscellaneous>
+	<miscellaneous language="Français" id="fight">
+		COMBATTRE
+	</miscellaneous>
+	<miscellaneous language="English" id="fight">
+		FIGHT
+	</miscellaneous>
+	<miscellaneous language="Español" id="fight">
+		LUCHA
+	</miscellaneous>
+	<miscellaneous language="Français" id="results">
+		RESULTATS
+	</miscellaneous>
+	<miscellaneous language="English" id="results">
+		RESULTS
+	</miscellaneous>
+	<miscellaneous language="Español" id="results">
+		RESULTADOS
+	</miscellaneous>
+	<miscellaneous language="Français" id="score">
+		SCORE
+	</miscellaneous>
+	<miscellaneous language="English" id="score">
+		SCORE
+	</miscellaneous>
+	<miscellaneous language="Español" id="score">
+		APUNTA
+	</miscellaneous>
+	<miscellaneous language="Français" id="kill">
+		Tués
+	</miscellaneous>
+	<miscellaneous language="English" id="kill">
+		Kills
+	</miscellaneous>
+	<miscellaneous language="Español" id="kill">
+		Mata
+	</miscellaneous>
+	<miscellaneous language="Français" id="death">
+		Mort
+	</miscellaneous>
+	<miscellaneous language="English" id="death">
+		Dead
+	</miscellaneous>
+	<miscellaneous language="Español" id="death">
+		Muerte
+	</miscellaneous>
+	<miscellaneous language="Français" id="suicide">
+		Suicide
+	</miscellaneous>
+	<miscellaneous language="English" id="suicide">
+		Suicide
+	</miscellaneous>
+	<miscellaneous language="Español" id="suicide">
+		Suicidio
+	</miscellaneous>
+	<miscellaneous language="Français" id="confirm">
+		Es-tu sûr ?
+	</miscellaneous>
+	<miscellaneous language="English" id="confirm">
+		Are you sure ?
+	</miscellaneous>
+	<miscellaneous language="Español" id="confirm">
+		Estas seguro ? 
+	</miscellaneous>
+	////////////////////////////////////////////////////////////
+	<settings language="Français" id="language">
+		Langue
+	</settings>
+	<settings language="English" id="language">
+		Language
+	</settings>
+	<settings language="Español" id="language">
+		Idioma
+	</settings>
+	<settings language="Français" id="fullscreen">
+		Plein ecran
+	</settings>
+	<settings language="English" id="fullscreen">
+		Fullscreen
+	</settings>
+	<settings language="Español" id="fullscreen">
+		Pantalla completa
+	</settings>
+	<settings language="Français" id="time">
+		Temps de jeu
+	</settings>
+	<settings language="English" id="time">
+		Game time
+	</settings>
+	<settings language="Español" id="time">
+		Tiempo de juego
+	</settings>
+	<settings language="Français" id="analog">
+		Controles analogique
+	</settings>
+	<settings language="English" id="analog">
+		Analog controls
+	</settings>
+	<settings language="Español" id="analog">
+		Controles analogicos
+	</settings>
+	<settings language="Français" id="life">
+		Points de vie
+	</settings>
+	<settings language="English" id="life">
+		Health points
+	</settings>
+	<settings language="Español" id="life">
+		Puntos de vida
+	</settings>
+	<settings language="Français" id="Music">
+		Volume musique
+	</settings>
+	<settings language="English" id="Music">
+		Music volume 
+	</settings>
+	<settings language="Español" id="Music">
+		Volumen de musica 
+	</settings>
+	<settings language="Français" id="Effects">
+		Volume effets 
+	</settings>
+	<settings language="English" id="Effects">
+		Effects volume
+	</settings>
+	<settings language="Español" id="Effects">
+		Volumen de efectos
+	</settings>
+	<settings language="Français" id="back">
+		Retour
+	</settings>
+	<settings language="English" id="back">
+		Back
+	</settings>
+	<settings language="Español" id="back">
+		Volver
+	</settings>
+</translation>

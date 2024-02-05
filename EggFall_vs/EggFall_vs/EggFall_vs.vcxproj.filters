@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\characters">
+      <UniqueIdentifier>{af6842fc-0a17-4e8c-9265-507fe1246b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\effects">
+      <UniqueIdentifier>{99055385-2fd5-466e-a7e3-56002f1c86cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment">
+      <UniqueIdentifier>{bd69c87a-149e-4cab-8269-8e366e551b10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\objects">
+      <UniqueIdentifier>{12873e39-4db6-4324-9151-66871336e4e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{2c399f94-6569-4c72-afc2-79a4a567974e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tools">
+      <UniqueIdentifier>{aff1fca8-1a8b-4045-89db-9514e71a1751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\characters">
+      <UniqueIdentifier>{f07347b2-d8bb-46b9-aa21-44d94dfb160c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\effects">
+      <UniqueIdentifier>{466e0ddb-f7ca-41c8-8489-bac60d2499ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment">
+      <UniqueIdentifier>{b25eed05-2c62-4f0c-906c-e1560c8d8683}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tinyXML">
+      <UniqueIdentifier>{8f9ea5fb-97a3-458c-b54f-4b38796f0410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objects">
+      <UniqueIdentifier>{950ac3d4-a66b-47ec-baf7-fc22596f5d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{c6f302e2-fcb8-4aaa-84b7-a4ae4fb36345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tools">
+      <UniqueIdentifier>{0675a945-e91b-4780-ad72-0d577fc31bc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tinyXML">
+      <UniqueIdentifier>{7e702be8-eb25-4915-a81c-dfe119d7d492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\projectiles">
+      <UniqueIdentifier>{9ac5aa5e-55ef-4b0a-81b6-639616394f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\projectiles">
+      <UniqueIdentifier>{916aaf0a-f6d1-44d2-a162-224273b3aee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\editor">
+      <UniqueIdentifier>{742d74f3-4fc4-4da9-bff1-f8fc1f3273f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\editor">
+      <UniqueIdentifier>{0b290292-ef42-4719-b6b4-9055952e0628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment\flourish">
+      <UniqueIdentifier>{d7748806-ddf2-4bca-bf46-0c341db463d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment\walkable">
+      <UniqueIdentifier>{02a6f14b-006a-40c1-9c99-c75f8b79d82b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\flourish">
+      <UniqueIdentifier>{b75fa8dc-e63e-4d3e-b593-b3fddc311534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\walkable">
+      <UniqueIdentifier>{85117676-84d2-4c47-8500-a7297c3c3745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\flourish\tree">
+      <UniqueIdentifier>{00959b82-7f4b-4e9a-be20-95e23b2fd4a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment\flourish\tree">
+      <UniqueIdentifier>{0ed31fa5-5f62-4c1e-8b88-8e1a989af2f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\flourish\lamp">
+      <UniqueIdentifier>{f03f6b04-4087-43f9-a312-5f1ff7408f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment\flourish\lamp">
+      <UniqueIdentifier>{e5ca7fcd-7290-4121-9c53-163ead755b69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\menu">
+      <UniqueIdentifier>{3d9cdd45-b205-42b0-aecb-42e731a682fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\menu">
+      <UniqueIdentifier>{9cef6d3d-234e-417c-bd9a-b989b42e0967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\display">
+      <UniqueIdentifier>{9857915f-a478-4acc-84aa-65eb0955880e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\display">
+      <UniqueIdentifier>{a73371f4-1207-4b1b-b850-71d29e8415ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="characters\hero.hpp">
+      <Filter>Header Files\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="effects\effects.hpp">
+      <Filter>Header Files\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="effects\sound.hpp">
+      <Filter>Header Files\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\maps.hpp">
+      <Filter>Header Files\environment</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyXML\tinystr.h">
+      <Filter>Header Files\tinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyXML\tinyxml.h">
+      <Filter>Header Files\tinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\Box2DTools.hpp">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\files.hpp">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\input.hpp">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\settings.hpp">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\xmlReader.hpp">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\mainGame.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\utils.hpp">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="effects\effectObj.hpp">
+      <Filter>Header Files\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="effects\animation.hpp">
+      <Filter>Header Files\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="projectiles\projectiles.hpp">
+      <Filter>Header Files\projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="characters\wizard.hpp">
+      <Filter>Header Files\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="editor\editor.hpp">
+      <Filter>Header Files\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\mapReader.hpp">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="editor\editorGroundModule.hpp">
+      <Filter>Header Files\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="effects\colorScheme.hpp">
+      <Filter>Header Files\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="editor\editorPlatformModule.hpp">
+      <Filter>Header Files\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\grass.hpp">
+      <Filter>Header Files\environment\flourish</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\walkable\scalablePlatform.hpp">
+      <Filter>Header Files\environment\walkable</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\walkable\bridge.hpp">
+      <Filter>Header Files\environment\walkable</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\walkable\ladder.hpp">
+      <Filter>Header Files\environment\walkable</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\walkable\platform.hpp">
+      <Filter>Header Files\environment\walkable</Filter>
+    </ClInclude>
+    <ClInclude Include="editor\editorBridgeModule.hpp">
+      <Filter>Header Files\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\teeter.hpp">
+      <Filter>Header Files\environment\flourish</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\tree\firShort.hpp">
+      <Filter>Header Files\environment\flourish\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\tree\firLong.hpp">
+      <Filter>Header Files\environment\flourish\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\tree\cutTree.hpp">
+      <Filter>Header Files\environment\flourish\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\tree\roundTree.hpp">
+      <Filter>Header Files\environment\flourish\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\tree\oak.hpp">
+      <Filter>Header Files\environment\flourish\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\tree\shrub.hpp">
+      <Filter>Header Files\environment\flourish\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\tree\shrubSmall.hpp">
+      <Filter>Header Files\environment\flourish\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\tree\sakura.hpp">
+      <Filter>Header Files\environment\flourish\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\tree\teeterTree.hpp">
+      <Filter>Header Files\environment\flourish\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\lamp\teeterLamp.hpp">
+      <Filter>Header Files\environment\flourish\lamp</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\lamp\conicalLampA.hpp">
+      <Filter>Header Files\environment\flourish\lamp</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\lamp\conicalLampB.hpp">
+      <Filter>Header Files\environment\flourish\lamp</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\lamp\conicalLampC.hpp">
+      <Filter>Header Files\environment\flourish\lamp</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\lamp\pipeLamp.hpp">
+      <Filter>Header Files\environment\flourish\lamp</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\flourish\lamp\hatLamp.hpp">
+      <Filter>Header Files\environment\flourish\lamp</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\menu\menuOptions.hpp">
+      <Filter>Header Files\UI\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\menu\menuPad.hpp">
+      <Filter>Header Files\UI\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\menu\menuSelector.hpp">
+      <Filter>Header Files\UI\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\menu\heroSelector.hpp">
+      <Filter>Header Files\UI\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\menu\menuHeroSelector.hpp">
+      <Filter>Header Files\UI\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\menu\menuList.hpp">
+      <Filter>Header Files\UI\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\display\keyboardKey.hpp">
+      <Filter>Header Files\UI\display</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\display\scoreManager.hpp">
+      <Filter>Header Files\UI\display</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\display\playerHUD.hpp">
+      <Filter>Header Files\UI\display</Filter>
+    </ClInclude>
+    <ClInclude Include="characters\AI.hpp">
+      <Filter>Header Files\characters</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\graph.hpp">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="projectiles\projectileObj.hpp">
+      <Filter>Header Files\projectiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="characters\hero.cpp">
+      <Filter>Source Files\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="effects\effects.cpp">
+      <Filter>Source Files\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effects\sound.cpp">
+      <Filter>Source Files\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\maps.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXML\tinystr.cpp">
+      <Filter>Source Files\tinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXML\tinyxml.cpp">
+      <Filter>Source Files\tinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXML\tinyxmlerror.cpp">
+      <Filter>Source Files\tinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyXML\tinyxmlparser.cpp">
+      <Filter>Source Files\tinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\Box2DTools.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\files.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\input.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\settings.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\xmlReader.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\mainGame.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\utils.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="effects\effectObj.cpp">
+      <Filter>Source Files\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="effects\animation.cpp">
+      <Filter>Source Files\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="projectiles\projectiles.cpp">
+      <Filter>Source Files\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="characters\wizard.cpp">
+      <Filter>Source Files\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="editor\editor.cpp">
+      <Filter>Source Files\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\mapReader.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="editor\editorGroundModule.cpp">
+      <Filter>Source Files\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="effects\colorScheme.cpp">
+      <Filter>Source Files\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="editor\editorPlatformModule.cpp">
+      <Filter>Source Files\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\flourish\grass.cpp">
+      <Filter>Source Files\environment\flourish</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\walkable\bridge.cpp">
+      <Filter>Source Files\environment\walkable</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\walkable\scalablePlatform.cpp">
+      <Filter>Source Files\environment\walkable</Filter>
+    </ClCompile>
+    <ClCompile Include="editor\editorBridgeModule.cpp">
+      <Filter>Source Files\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\flourish\teeter.cpp">
+      <Filter>Source Files\environment\flourish</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\flourish\tree\teeterTree.cpp">
+      <Filter>Source Files\environment\flourish\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="environment\flourish\lamp\teeterLamp.cpp">
+      <Filter>Source Files\environment\flourish\lamp</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\menu\menuHeroSelector.cpp">
+      <Filter>Source Files\UI\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\menu\menuList.cpp">
+      <Filter>Source Files\UI\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\menu\menuOptions.cpp">
+      <Filter>Source Files\UI\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\menu\menuPad.cpp">
+      <Filter>Source Files\UI\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\menu\menuSelector.cpp">
+      <Filter>Source Files\UI\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\menu\heroSelector.cpp">
+      <Filter>Source Files\UI\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\display\keyboardKey.cpp">
+      <Filter>Source Files\UI\display</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\display\scoreManager.cpp">
+      <Filter>Source Files\UI\display</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\display\playerHUD.cpp">
+      <Filter>Source Files\UI\display</Filter>
+    </ClCompile>
+    <ClCompile Include="characters\AI.cpp">
+      <Filter>Source Files\characters</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\graph.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="projectiles\projectileObj.cpp">
+      <Filter>Source Files\projectiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EggFall_vs.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

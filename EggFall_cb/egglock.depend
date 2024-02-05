@@ -1,0 +1,1601 @@
+# depslib dependency file v1.0
+1474058717 source:e:\egglock\characters\hero.cpp
+	"hero.hpp"
+
+1467447187 e:\egglock\characters\hero.hpp
+	<math.h>
+	<string.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/Audio.hpp>
+	<Box2D/Box2D.h>
+	"../tools/input.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/animation.hpp"
+	"../tools/files.hpp"
+	"../effects/effects.hpp"
+	"../effects/spells.hpp"
+	"../effects/sound.hpp"
+	"../objects/ladder.hpp"
+	"../UI/scoreManager.hpp"
+
+1462014599 e:\egglock\tools\input.hpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<fstream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	"files.hpp"
+	"xmlReader.hpp"
+
+1473000670 e:\egglock\tools\box2dtools.hpp
+	<iostream>
+	<math.h>
+	<vector>
+	<typeinfo>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+
+1474273096 e:\egglock\tools\animation.hpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+
+1467219383 e:\egglock\tools\files.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+
+1474218760 e:\egglock\effects\effects.hpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	<math.h>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/animation.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+
+1455138318 e:\egglock\objects\ladder.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+
+1474218753 source:e:\egglock\effects\effects.cpp
+	"effects.hpp"
+
+1472576825 source:e:\egglock\environment\maps.cpp
+	"maps.hpp"
+
+1472497933 e:\egglock\environment\maps.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/files.hpp"
+	"../tools/Box2DTools.hpp"
+	"../objects/ladder.hpp"
+	"../effects/effects.hpp"
+	"tree.hpp"
+
+1459720312 source:e:\egglock\environment\tree.cpp
+	"tree.hpp"
+
+1459176506 e:\egglock\environment\tree.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/files.hpp"
+	"../tools/Box2DTools.hpp"
+	"../effects/effects.hpp"
+
+1455138612 source:e:\egglock\objects\ladder.cpp
+	"ladder.hpp"
+
+1454256859 source:e:\egglock\tools\aabb.cpp
+	"AABB.hpp"
+
+1454256862 e:\egglock\tools\aabb.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+
+1474274278 source:e:\egglock\tools\animation.cpp
+	"animation.hpp"
+
+1473001958 source:e:\egglock\tools\box2dtools.cpp
+	"Box2DTools.hpp"
+
+1461156848 source:e:\egglock\tools\camera.cpp
+	"camera.hpp"
+
+1457211974 e:\egglock\tools\camera.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../characters/hero.hpp"
+
+1474057501 source:e:\egglock\tools\files.cpp
+	"files.hpp"
+
+1462617853 source:e:\egglock\tools\input.cpp
+	"input.hpp"
+
+1474057446 source:e:\egglock\main.cpp
+	<stdlib.h>
+	<iostream>
+	<time.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"tools/Box2DTools.hpp"
+	"tools/input.hpp"
+	"tools/camera.hpp"
+	"tools/xmlReader.hpp"
+	"tools/settings.hpp"
+	"effects/effects.hpp"
+	"effects/spells.hpp"
+	"effects/sound.hpp"
+	"characters/hero.hpp"
+	"environment/maps.hpp"
+	"environment/tree.hpp"
+	"objects/ladder.hpp"
+	"UI/menuList.hpp"
+	"UI/mainGame.hpp"
+
+1454266120 e:\egglock\effects\shadows.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	"../tools/AABB.hpp"
+	"../tools/files.hpp"
+
+1474306382 source:e:\egglock\effects\spells.cpp
+	"spells.hpp"
+
+1467045112 e:\egglock\effects\spells.hpp
+	<iostream>
+	<math.h>
+	<vector>
+	<random>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/animation.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+	"../characters/hero.hpp"
+	"effects.hpp"
+	"sound.hpp"
+
+1273795323 c:\tdm-gcc-32\include\xinput\xinput.h
+	<windef.h>
+
+1435678768 c:\tdm-gcc-32\include\libstem\gamepad.h
+	<stdbool.h>
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1353409116 c:\tdm-gcc-32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+	<stdarg.h>
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\begin_code.h
+
+1353409116 c:\tdm-gcc-32\include\sdl2\close_code.h
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409112 c:\tdm-gcc-32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1353409114 c:\tdm-gcc-32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1456875264 source:e:\egglock\tools\joystick.cpp
+	"joystick.h"
+
+1456875065 e:\egglock\tools\joystick.h
+	<SDL.h>
+	<SDL_joystick.h>
+	<iostream>
+	<stdlib.h>
+
+1470251275 source:e:\egglock\effects\sound.cpp
+	"sound.hpp"
+
+1470250963 e:\egglock\effects\sound.hpp
+	<iostream>
+	<vector>
+	<random>
+	<ctime>
+	<SFML/Audio.hpp>
+	"../tools/settings.hpp"
+
+1457805626 source:e:\egglock\resource.rc
+
+1305390298 source:e:\egglock\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1305390298 e:\egglock\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1305390298 source:e:\egglock\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1305390298 e:\egglock\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1305390298 source:e:\egglock\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1305390298 source:e:\egglock\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1470250421 source:e:\egglock\tools\xmlreader.cpp
+	"xmlReader.hpp"
+
+1467304442 e:\egglock\tools\xmlreader.hpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<fstream>
+	<vector>
+	"../tinyXML/tinyxml.h"
+	"files.hpp"
+
+1467909664 source:e:\egglock\ui\menulist.cpp
+	"menuList.hpp"
+
+1467909563 e:\egglock\ui\menulist.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/xmlReader.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+
+1473007220 source:e:\egglock\ui\maingame.cpp
+	"mainGame.hpp"
+
+1470250108 e:\egglock\ui\maingame.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../tools/Box2DTools.hpp"
+	"../tools/input.hpp"
+	"../tools/camera.hpp"
+	"../tools/xmlReader.hpp"
+	"../tools/settings.hpp"
+	"../effects/effects.hpp"
+	"../effects/spells.hpp"
+	"../effects/sound.hpp"
+	"../characters/hero.hpp"
+	"../environment/maps.hpp"
+	"../environment/tree.hpp"
+	"../objects/ladder.hpp"
+	"menuList.hpp"
+	"menuOptions.hpp"
+	"menuPad.hpp"
+	"menuSelector.hpp"
+	"menuHeroSelector.hpp"
+	"keyboardKey.hpp"
+	"scoreManager.hpp"
+
+1467135813 e:\egglock\ui\menuoptions.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuList.hpp"
+	"../tools/xmlReader.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+
+1467135884 source:e:\egglock\ui\menuoptions.cpp
+	"menuOptions.hpp"
+
+1462023688 e:\egglock\ui\menupad.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/xmlReader.hpp"
+	"../tools/files.hpp"
+	"../tools/input.hpp"
+
+1467304097 source:e:\egglock\ui\menupad.cpp
+	"menuPad.hpp"
+
+1462453778 e:\egglock\ui\menuselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/input.hpp"
+
+1462453808 source:e:\egglock\ui\menuselector.cpp
+	"menuSelector.hpp"
+
+1466887078 e:\egglock\ui\heroselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuSelector.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+	"../tools/xmlReader.hpp"
+	"../effects/sound.hpp"
+	"keyboardKey.hpp"
+
+1466887374 source:e:\egglock\ui\heroselector.cpp
+	"heroSelector.hpp"
+
+1466887196 source:e:\egglock\ui\menuheroselector.cpp
+	"menuHeroSelector.hpp"
+
+1466887174 e:\egglock\ui\menuheroselector.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"heroSelector.hpp"
+	"menuList.hpp"
+	"keyboardKey.hpp"
+	"../tools/files.hpp"
+	"../tools/input.hpp"
+	"../tools/xmlReader.hpp"
+	"../effects/sound.hpp"
+
+1462710266 e:\egglock\ui\keyboardkey.hpp
+	<iostream>
+	<vector>
+	<string>
+	<math.h>
+	<SFML/Graphics.hpp>
+	"../tools/files.hpp"
+
+1462710758 source:e:\egglock\ui\keyboardkey.cpp
+	"keyboardKey.hpp"
+
+1467054434 e:\egglock\ui\scoremanager.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"../characters/hero.hpp"
+	"../effects/sound.hpp"
+	"../tools/files.hpp"
+	"../tools/xmlReader.hpp"
+
+1467055961 source:e:\egglock\ui\scoremanager.cpp
+	"scoreManager.hpp"
+
+1470249750 source:e:\egglock\tools\settings.cpp
+	"settings.hpp"
+
+1470249682 e:\egglock\tools\settings.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	"xmlReader.hpp"
+
+1510689142 source:h:\egglock\characters\hero.cpp
+	"hero.hpp"
+
+1510685410 h:\egglock\characters\hero.hpp
+	<math.h>
+	<string.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/Audio.hpp>
+	<Box2D/Box2D.h>
+	"../tools/input.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/animation.hpp"
+	"../tools/files.hpp"
+	"../effects/effects.hpp"
+	"../effects/spells.hpp"
+	"../effects/sound.hpp"
+	"../objects/ladder.hpp"
+	"../UI/scoreManager.hpp"
+
+1462018199 h:\egglock\tools\input.hpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<fstream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	"files.hpp"
+	"xmlReader.hpp"
+
+1467222983 h:\egglock\tools\files.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+
+1467308042 h:\egglock\tools\xmlreader.hpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<fstream>
+	<vector>
+	"../tinyXML/tinyxml.h"
+	"files.hpp"
+
+1305393898 h:\egglock\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1305393898 h:\egglock\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1473004270 h:\egglock\tools\box2dtools.hpp
+	<iostream>
+	<math.h>
+	<vector>
+	<typeinfo>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+
+1474276696 h:\egglock\tools\animation.hpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+
+1474222360 h:\egglock\effects\effects.hpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	<math.h>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/animation.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+
+1467048712 h:\egglock\effects\spells.hpp
+	<iostream>
+	<math.h>
+	<vector>
+	<random>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/animation.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+	"../characters/hero.hpp"
+	"effects.hpp"
+	"sound.hpp"
+
+1470254563 h:\egglock\effects\sound.hpp
+	<iostream>
+	<vector>
+	<random>
+	<ctime>
+	<SFML/Audio.hpp>
+	"../tools/settings.hpp"
+
+1470253282 h:\egglock\tools\settings.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	"xmlReader.hpp"
+
+1455138318 h:\egglock\objects\ladder.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+
+1467058034 h:\egglock\ui\scoremanager.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"../characters/hero.hpp"
+	"../effects/sound.hpp"
+	"../tools/files.hpp"
+	"../tools/xmlReader.hpp"
+
+1474222353 source:h:\egglock\effects\effects.cpp
+	"effects.hpp"
+
+1470254875 source:h:\egglock\effects\sound.cpp
+	"sound.hpp"
+
+1510485156 source:h:\egglock\effects\spells.cpp
+	"spells.hpp"
+
+1472580425 source:h:\egglock\environment\maps.cpp
+	"maps.hpp"
+
+1472501533 h:\egglock\environment\maps.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/files.hpp"
+	"../tools/Box2DTools.hpp"
+	"../objects/ladder.hpp"
+	"../effects/effects.hpp"
+	"tree.hpp"
+
+1459180106 h:\egglock\environment\tree.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/files.hpp"
+	"../tools/Box2DTools.hpp"
+	"../effects/effects.hpp"
+
+1459723912 source:h:\egglock\environment\tree.cpp
+	"tree.hpp"
+
+1474061046 source:h:\egglock\main.cpp
+	<stdlib.h>
+	<iostream>
+	<time.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"tools/Box2DTools.hpp"
+	"tools/input.hpp"
+	"tools/camera.hpp"
+	"tools/xmlReader.hpp"
+	"tools/settings.hpp"
+	"effects/effects.hpp"
+	"effects/spells.hpp"
+	"effects/sound.hpp"
+	"characters/hero.hpp"
+	"environment/maps.hpp"
+	"environment/tree.hpp"
+	"objects/ladder.hpp"
+	"UI/menuList.hpp"
+	"UI/mainGame.hpp"
+
+1457211974 h:\egglock\tools\camera.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../characters/hero.hpp"
+
+1467913163 h:\egglock\ui\menulist.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/xmlReader.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+
+1510599777 h:\egglock\ui\maingame.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../tools/Box2DTools.hpp"
+	"../tools/input.hpp"
+	"../tools/camera.hpp"
+	"../tools/xmlReader.hpp"
+	"../tools/settings.hpp"
+	"../effects/effects.hpp"
+	"../effects/spells.hpp"
+	"../effects/sound.hpp"
+	"../characters/hero.hpp"
+	"../environment/maps.hpp"
+	"../environment/tree.hpp"
+	"../objects/ladder.hpp"
+	"menuList.hpp"
+	"menuOptions.hpp"
+	"menuPad.hpp"
+	"menuSelector.hpp"
+	"menuHeroSelector.hpp"
+	"keyboardKey.hpp"
+	"scoreManager.hpp"
+
+1467139413 h:\egglock\ui\menuoptions.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuList.hpp"
+	"../tools/xmlReader.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+
+1462027288 h:\egglock\ui\menupad.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/xmlReader.hpp"
+	"../tools/files.hpp"
+	"../tools/input.hpp"
+
+1462457378 h:\egglock\ui\menuselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/input.hpp"
+
+1466890774 h:\egglock\ui\menuheroselector.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"heroSelector.hpp"
+	"menuList.hpp"
+	"keyboardKey.hpp"
+	"../tools/files.hpp"
+	"../tools/input.hpp"
+	"../tools/xmlReader.hpp"
+	"../effects/sound.hpp"
+
+1466890678 h:\egglock\ui\heroselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuSelector.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+	"../tools/xmlReader.hpp"
+	"../effects/sound.hpp"
+	"keyboardKey.hpp"
+
+1462713866 h:\egglock\ui\keyboardkey.hpp
+	<iostream>
+	<vector>
+	<string>
+	<math.h>
+	<SFML/Graphics.hpp>
+	"../tools/files.hpp"
+
+1455138612 source:h:\egglock\objects\ladder.cpp
+	"ladder.hpp"
+
+1457805626 source:h:\egglock\resource.rc
+
+1305393898 source:h:\egglock\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1305393898 source:h:\egglock\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1305393898 source:h:\egglock\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1305393898 source:h:\egglock\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1474277878 source:h:\egglock\tools\animation.cpp
+	"animation.hpp"
+
+1510485276 source:h:\egglock\tools\box2dtools.cpp
+	"Box2DTools.hpp"
+
+1461160448 source:h:\egglock\tools\camera.cpp
+	"camera.hpp"
+
+1510600688 source:h:\egglock\tools\files.cpp
+	"files.hpp"
+
+1462621453 source:h:\egglock\tools\input.cpp
+	"input.hpp"
+
+1470253350 source:h:\egglock\tools\settings.cpp
+	"settings.hpp"
+
+1470254021 source:h:\egglock\tools\xmlreader.cpp
+	"xmlReader.hpp"
+
+1466890974 source:h:\egglock\ui\heroselector.cpp
+	"heroSelector.hpp"
+
+1462714358 source:h:\egglock\ui\keyboardkey.cpp
+	"keyboardKey.hpp"
+
+1466890796 source:h:\egglock\ui\menuheroselector.cpp
+	"menuHeroSelector.hpp"
+
+1510598536 source:h:\egglock\ui\menulist.cpp
+	"menuList.hpp"
+
+1467139484 source:h:\egglock\ui\menuoptions.cpp
+	"menuOptions.hpp"
+
+1467307697 source:h:\egglock\ui\menupad.cpp
+	"menuPad.hpp"
+
+1462457408 source:h:\egglock\ui\menuselector.cpp
+	"menuSelector.hpp"
+
+1467059561 source:h:\egglock\ui\scoremanager.cpp
+	"scoreManager.hpp"
+
+1510601431 source:h:\egglock\ui\maingame.cpp
+	"mainGame.hpp"
+
+1524669297 source:h:\eggfall_cb\characters\hero.cpp
+	"hero.hpp"
+
+1524668610 h:\eggfall_cb\characters\hero.hpp
+	<math.h>
+	<string.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/Audio.hpp>
+	<Box2D/Box2D.h>
+	"../tools/input.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+	"../tools/utils.hpp"
+	"../effects/animation.hpp"
+	"../effects/effects.hpp"
+	"../effects/sound.hpp"
+	"../projectiles/projectiles.hpp"
+	"../UI/scoreManager.hpp"
+
+1520200819 h:\eggfall_cb\tools\input.hpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<fstream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	"files.hpp"
+	"xmlReader.hpp"
+	"utils.hpp"
+
+1523521167 h:\eggfall_cb\tools\files.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+
+1518968632 h:\eggfall_cb\tools\xmlreader.hpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<fstream>
+	<vector>
+	"../tinyXML/tinyxml.h"
+	"files.hpp"
+
+1305397498 h:\eggfall_cb\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1305397498 h:\eggfall_cb\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1524512718 h:\eggfall_cb\tools\utils.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<typeinfo>
+	<SFML/Graphics.hpp>
+
+1524676178 h:\eggfall_cb\tools\box2dtools.hpp
+	<iostream>
+	<math.h>
+	<vector>
+	<typeinfo>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"utils.hpp"
+
+1520622813 h:\eggfall_cb\effects\animation.hpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	"../tools/utils.hpp"
+
+1524656607 h:\eggfall_cb\effects\effects.hpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cmath>
+	<math.h>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"animation.hpp"
+	"effectObj.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+
+1524341282 h:\eggfall_cb\effects\effectobj.hpp
+	<iostream>
+	<cstdlib>
+	<cmath>
+	<math.h>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"animation.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/utils.hpp"
+	"../UI/menuList.hpp"
+
+1512993549 h:\eggfall_cb\ui\menulist.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/xmlReader.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+
+1511453720 h:\eggfall_cb\effects\sound.hpp
+	<iostream>
+	<vector>
+	<random>
+	<ctime>
+	<SFML/Audio.hpp>
+	"../tools/settings.hpp"
+
+1518968598 h:\eggfall_cb\tools\settings.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	"xmlReader.hpp"
+
+1524140250 h:\eggfall_cb\projectiles\projectiles.hpp
+	<iostream>
+	<math.h>
+	<vector>
+	<random>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/Box2DTools.hpp"
+	"../tools/files.hpp"
+	"../tools/utils.hpp"
+	"../characters/hero.hpp"
+	"../effects/effects.hpp"
+	"../effects/animation.hpp"
+	"../effects/sound.hpp"
+	"../environment/maps.hpp"
+	"spellObj.hpp"
+
+1524515065 h:\eggfall_cb\environment\maps.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<math.h>
+	<string>
+	<functional>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../tools/files.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/mapReader.hpp"
+	"../objects/scalablePlatform.hpp"
+	"../objects/ladder.hpp"
+	"../objects/platform.hpp"
+	"../objects/bridge.hpp"
+	"../effects/effects.hpp"
+	"../editor/editor.hpp"
+	"tree.hpp"
+	"grass.hpp"
+
+1524049752 h:\eggfall_cb\tools\mapreader.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	<SFML\Graphics.hpp>
+	"../tinyXML/tinyxml.h"
+	"../effects/colorScheme.hpp"
+	"files.hpp"
+	"xmlReader.hpp"
+
+1520870921 h:\eggfall_cb\effects\colorscheme.hpp
+	<iostream>
+	<SFML/Graphics.hpp>
+
+1524139062 h:\eggfall_cb\objects\scalableplatform.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+
+1524222615 h:\eggfall_cb\objects\ladder.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+	"../objects/scalablePlatform.hpp"
+
+1524223461 h:\eggfall_cb\objects\platform.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+	"../objects/scalablePlatform.hpp"
+
+1524584368 h:\eggfall_cb\objects\bridge.hpp
+	<iostream>
+	<vector>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+
+1523991140 h:\eggfall_cb\editor\editor.hpp
+	<iostream>
+	<vector>
+	<functional>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../environment/maps.hpp"
+	"../tools/input.hpp"
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+	"../effects/effects.hpp"
+	"../environment/grass.hpp"
+	"editorGroundModule.hpp"
+	"editorPlatformModule.hpp"
+
+1524048952 h:\eggfall_cb\environment\grass.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"../tools/Box2DTools.hpp"
+	"../tools/utils.hpp"
+	"../tools/files.hpp"
+	"../effects/colorScheme.hpp"
+
+1523992783 h:\eggfall_cb\editor\editorgroundmodule.hpp
+	"editor.hpp"
+
+1523521309 h:\eggfall_cb\editor\editorplatformmodule.hpp
+	<iostream>
+	<vector>
+	<functional>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../environment/maps.hpp"
+	"../tools/input.hpp"
+	"../tools/utils.hpp"
+	"../tools/Box2DTools.hpp"
+	"../effects/effects.hpp"
+	"../environment/grass.hpp"
+	"editorGroundModule.hpp"
+
+1518867827 h:\eggfall_cb\environment\tree.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../tools/files.hpp"
+	"../tools/Box2DTools.hpp"
+	"../effects/effects.hpp"
+	"../effects/effectObj.hpp"
+
+1524515146 h:\eggfall_cb\projectiles\spellobj.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D\Box2D.h>
+	"../effects/animation.hpp"
+	"../effects/effects.hpp"
+	"../effects/sound.hpp"
+	"../characters/hero.hpp"
+	"../tools/Box2DTools.hpp"
+	"../tools/utils.hpp"
+
+1519923456 h:\eggfall_cb\ui\scoremanager.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"../characters/hero.hpp"
+	"../effects/sound.hpp"
+	"../tools/files.hpp"
+	"../tools/xmlReader.hpp"
+	"../effects/effects.hpp"
+
+1523351153 source:h:\eggfall_cb\characters\wizard.cpp
+	"wizard.hpp"
+
+1521295616 h:\eggfall_cb\characters\wizard.hpp
+	"hero.hpp"
+
+1524073361 source:h:\eggfall_cb\editor\editor.cpp
+	"editor.hpp"
+
+1524049779 source:h:\eggfall_cb\editor\editorgroundmodule.cpp
+	"editorGroundModule.hpp"
+
+1524222812 source:h:\eggfall_cb\editor\editorplatformmodule.cpp
+	"editorPlatformModule.hpp"
+
+1523824948 source:h:\eggfall_cb\effects\animation.cpp
+	"animation.hpp"
+
+1520872825 source:h:\eggfall_cb\effects\colorscheme.cpp
+	"colorScheme.hpp"
+
+1524341456 source:h:\eggfall_cb\effects\effectobj.cpp
+	"effectObj.hpp"
+
+1524656601 source:h:\eggfall_cb\effects\effects.cpp
+	"effects.hpp"
+
+1520203009 source:h:\eggfall_cb\effects\sound.cpp
+	"sound.hpp"
+
+1524669135 source:h:\eggfall_cb\environment\grass.cpp
+	"grass.hpp"
+
+1524669316 source:h:\eggfall_cb\environment\maps.cpp
+	"maps.hpp"
+
+1524669326 source:h:\eggfall_cb\environment\tree.cpp
+	"tree.hpp"
+
+1524668936 source:h:\eggfall_cb\main.cpp
+	<stdlib.h>
+	<iostream>
+	<time.h>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"tools/settings.hpp"
+	"UI/mainGame.hpp"
+
+1524668827 h:\eggfall_cb\ui\maingame.hpp
+	<iostream>
+	<vector>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<Box2D/Box2D.h>
+	"../tools/Box2DTools.hpp"
+	"../tools/input.hpp"
+	"../tools/camera.hpp"
+	"../tools/xmlReader.hpp"
+	"../tools/settings.hpp"
+	"../effects/effects.hpp"
+	"../effects/sound.hpp"
+	"../projectiles/projectiles.hpp"
+	"../characters/wizard.hpp"
+	"../environment/maps.hpp"
+	"../environment/tree.hpp"
+	"../editor/editor.hpp"
+	"menuList.hpp"
+	"menuOptions.hpp"
+	"menuPad.hpp"
+	"menuSelector.hpp"
+	"menuHeroSelector.hpp"
+	"keyboardKey.hpp"
+	"scoreManager.hpp"
+
+1511438156 h:\eggfall_cb\tools\camera.hpp
+	<iostream>
+	<math.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<Box2D/Box2D.h>
+	"../characters/hero.hpp"
+
+1512475782 h:\eggfall_cb\ui\menuoptions.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuList.hpp"
+	"../tools/xmlReader.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+
+1512579356 h:\eggfall_cb\ui\menupad.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/xmlReader.hpp"
+	"../tools/files.hpp"
+	"../tools/input.hpp"
+
+1517438629 h:\eggfall_cb\ui\menuselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"../tools/input.hpp"
+
+1512401641 h:\eggfall_cb\ui\menuheroselector.hpp
+	<iostream>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	"heroSelector.hpp"
+	"menuList.hpp"
+	"keyboardKey.hpp"
+	"../tools/files.hpp"
+	"../tools/input.hpp"
+	"../tools/xmlReader.hpp"
+	"../effects/sound.hpp"
+
+1517438656 h:\eggfall_cb\ui\heroselector.hpp
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+	"menuSelector.hpp"
+	"../tools/input.hpp"
+	"../tools/files.hpp"
+	"../tools/xmlReader.hpp"
+	"../effects/sound.hpp"
+	"keyboardKey.hpp"
+
+1511438210 h:\eggfall_cb\ui\keyboardkey.hpp
+	<iostream>
+	<vector>
+	<string>
+	<math.h>
+	<SFML/Graphics.hpp>
+	"../tools/files.hpp"
+
+1524585305 source:h:\eggfall_cb\objects\bridge.cpp
+	"bridge.hpp"
+
+1524242418 source:h:\eggfall_cb\objects\scalableplatform.cpp
+	"scalablePlatform.hpp"
+
+1524351048 source:h:\eggfall_cb\projectiles\projectiles.cpp
+	"projectiles.hpp"
+
+1524669347 source:h:\eggfall_cb\projectiles\spellobj.cpp
+	"spellObj.hpp"
+
+1457809226 source:h:\eggfall_cb\resource.rc
+
+1305397498 source:h:\eggfall_cb\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1305397498 source:h:\eggfall_cb\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1305397498 source:h:\eggfall_cb\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1305397498 source:h:\eggfall_cb\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1519491667 source:h:\eggfall_cb\tools\camera.cpp
+	"camera.hpp"
+
+1524491524 source:h:\eggfall_cb\tools\files.cpp
+	"files.hpp"
+
+1520855005 source:h:\eggfall_cb\tools\input.cpp
+	"input.hpp"
+
+1524049777 source:h:\eggfall_cb\tools\mapreader.cpp
+	"mapReader.hpp"
+
+1518968644 source:h:\eggfall_cb\tools\settings.cpp
+	"settings.hpp"
+
+1524512722 source:h:\eggfall_cb\tools\utils.cpp
+	"utils.hpp"
+
+1520421362 source:h:\eggfall_cb\tools\xmlreader.cpp
+	"xmlReader.hpp"
+
+1517438663 source:h:\eggfall_cb\ui\heroselector.cpp
+	"heroSelector.hpp"
+
+1511438278 source:h:\eggfall_cb\ui\keyboardkey.cpp
+	"keyboardKey.hpp"
+
+1524675515 source:h:\eggfall_cb\ui\maingame.cpp
+	"mainGame.hpp"
+
+1520169147 source:h:\eggfall_cb\ui\menuheroselector.cpp
+	"menuHeroSelector.hpp"
+
+1520196341 source:h:\eggfall_cb\ui\menulist.cpp
+	"menuList.hpp"
+
+1512576232 source:h:\eggfall_cb\ui\menuoptions.cpp
+	"menuOptions.hpp"
+
+1520172788 source:h:\eggfall_cb\ui\menupad.cpp
+	"menuPad.hpp"
+
+1517438623 source:h:\eggfall_cb\ui\menuselector.cpp
+	"menuSelector.hpp"
+
+1519989450 source:h:\eggfall_cb\ui\scoremanager.cpp
+	"scoreManager.hpp"
+
+1524669205 source:h:\eggfall_cb\tools\box2dtools.cpp
+

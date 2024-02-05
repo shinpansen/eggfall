@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<settings>
+	<option type="language">
+		Français
+	</option>
+	<option type="fullscreen">
+		ON
+	</option>
+	<option type="time">
+		15 min
+	</option>
+	<option type="analog">
+		ON
+	</option>
+	<option type="life">
+		3
+	</option>
+	<option type="music">
+		0
+	</option>
+	<option type="effects">
+		10
+	</option>
+</settings>

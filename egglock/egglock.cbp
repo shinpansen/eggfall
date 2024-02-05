@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="egglock" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/egglock" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/TDM-GCC-32/include/SFML" />
+					<Add directory="C:/TDM-GCC-32/include/Box2D" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/TDM-GCC-32/lib/xinput" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-lBox2D" />
+					<Add library="sfml-window" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-system" />
+					<Add directory="C:/TDM-GCC-32/lib/SFML" />
+					<Add directory="C:/TDM-GCC-32/lib/Box2D" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/eggfall" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/TDM-GCC-32/include/SFML" />
+					<Add directory="C:/TDM-GCC-32/include/Box2D" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lBox2D" />
+					<Add library="sfml-window" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-system" />
+					<Add directory="C:/TDM-GCC-32/lib/SFML" />
+					<Add directory="C:/TDM-GCC-32/lib/Box2D" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="UI/heroSelector.cpp" />
+		<Unit filename="UI/heroSelector.hpp" />
+		<Unit filename="UI/keyboardKey.cpp" />
+		<Unit filename="UI/keyboardKey.hpp" />
+		<Unit filename="UI/mainGame.cpp" />
+		<Unit filename="UI/mainGame.hpp" />
+		<Unit filename="UI/menuHeroSelector.cpp" />
+		<Unit filename="UI/menuHeroSelector.hpp" />
+		<Unit filename="UI/menuList.cpp" />
+		<Unit filename="UI/menuList.hpp" />
+		<Unit filename="UI/menuOptions.cpp" />
+		<Unit filename="UI/menuOptions.hpp" />
+		<Unit filename="UI/menuPad.cpp" />
+		<Unit filename="UI/menuPad.hpp" />
+		<Unit filename="UI/menuSelector.cpp" />
+		<Unit filename="UI/menuSelector.hpp" />
+		<Unit filename="UI/scoreManager.cpp" />
+		<Unit filename="UI/scoreManager.hpp" />
+		<Unit filename="characters/hero.cpp" />
+		<Unit filename="characters/hero.hpp" />
+		<Unit filename="effects/effects.cpp" />
+		<Unit filename="effects/effects.hpp" />
+		<Unit filename="effects/sound.cpp" />
+		<Unit filename="effects/sound.hpp" />
+		<Unit filename="effects/spells.cpp" />
+		<Unit filename="effects/spells.hpp" />
+		<Unit filename="environment/maps.cpp" />
+		<Unit filename="environment/maps.hpp" />
+		<Unit filename="environment/tree.cpp" />
+		<Unit filename="environment/tree.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="objects/ladder.cpp" />
+		<Unit filename="objects/ladder.hpp" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="tinyXML/tinystr.cpp" />
+		<Unit filename="tinyXML/tinystr.h" />
+		<Unit filename="tinyXML/tinyxml.cpp" />
+		<Unit filename="tinyXML/tinyxml.h" />
+		<Unit filename="tinyXML/tinyxmlerror.cpp" />
+		<Unit filename="tinyXML/tinyxmlparser.cpp" />
+		<Unit filename="tools/Box2DTools.cpp" />
+		<Unit filename="tools/Box2DTools.hpp" />
+		<Unit filename="tools/animation.cpp" />
+		<Unit filename="tools/animation.hpp" />
+		<Unit filename="tools/camera.cpp" />
+		<Unit filename="tools/camera.hpp" />
+		<Unit filename="tools/files.cpp" />
+		<Unit filename="tools/files.hpp" />
+		<Unit filename="tools/input.cpp" />
+		<Unit filename="tools/input.hpp" />
+		<Unit filename="tools/settings.cpp" />
+		<Unit filename="tools/settings.hpp" />
+		<Unit filename="tools/xmlReader.cpp" />
+		<Unit filename="tools/xmlReader.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

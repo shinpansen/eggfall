@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<config>
+	<key type="JUMP">
+		76
+	</key>
+	<key type="ATTACK">
+		77
+	</key>
+	<key type="ROLL">
+		78
+	</key>
+	<key type="RUN">
+		75
+	</key>
+	<key type="UP">
+		73
+	</key>
+	<key type="DOWN">
+		74
+	</key>
+	<key type="LEFT">
+		71
+	</key>
+	<key type="RIGHT">
+		72
+	</key>
+</config>

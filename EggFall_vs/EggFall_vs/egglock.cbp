@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="eggfall" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/egglock" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/TDM-GCC-32/include/SFML" />
+					<Add directory="C:/TDM-GCC-32/include/Box2D" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/TDM-GCC-32/lib/xinput" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-lBox2D" />
+					<Add library="sfml-window" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-system" />
+					<Add directory="C:/TDM-GCC-32/lib/SFML" />
+					<Add directory="C:/TDM-GCC-32/lib/Box2D" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/eggfall" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/TDM-GCC-32/include/SFML" />
+					<Add directory="C:/TDM-GCC-32/include/Box2D" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lBox2D" />
+					<Add library="sfml-window" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-system" />
+					<Add directory="C:/TDM-GCC-32/lib/SFML" />
+					<Add directory="C:/TDM-GCC-32/lib/Box2D" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="UI/display/keyboardKey.cpp" />
+		<Unit filename="UI/display/keyboardKey.hpp" />
+		<Unit filename="UI/display/playerHUD.cpp" />
+		<Unit filename="UI/display/playerHUD.hpp" />
+		<Unit filename="UI/display/scoreManager.cpp" />
+		<Unit filename="UI/display/scoreManager.hpp" />
+		<Unit filename="UI/mainGame.cpp" />
+		<Unit filename="UI/mainGame.hpp" />
+		<Unit filename="UI/menu/heroSelector.cpp" />
+		<Unit filename="UI/menu/heroSelector.hpp" />
+		<Unit filename="UI/menu/menuHeroSelector.cpp" />
+		<Unit filename="UI/menu/menuHeroSelector.hpp" />
+		<Unit filename="UI/menu/menuList.cpp" />
+		<Unit filename="UI/menu/menuList.hpp" />
+		<Unit filename="UI/menu/menuOptions.cpp" />
+		<Unit filename="UI/menu/menuOptions.hpp" />
+		<Unit filename="UI/menu/menuPad.cpp" />
+		<Unit filename="UI/menu/menuPad.hpp" />
+		<Unit filename="UI/menu/menuSelector.cpp" />
+		<Unit filename="UI/menu/menuSelector.hpp" />
+		<Unit filename="characters/AI.cpp" />
+		<Unit filename="characters/AI.hpp" />
+		<Unit filename="characters/hero.cpp" />
+		<Unit filename="characters/hero.hpp" />
+		<Unit filename="characters/wizard.cpp" />
+		<Unit filename="characters/wizard.hpp" />
+		<Unit filename="editor/editor.cpp" />
+		<Unit filename="editor/editor.hpp" />
+		<Unit filename="editor/editorBridgeModule.cpp" />
+		<Unit filename="editor/editorBridgeModule.hpp" />
+		<Unit filename="editor/editorGroundModule.cpp" />
+		<Unit filename="editor/editorGroundModule.hpp" />
+		<Unit filename="editor/editorPlatformModule.cpp" />
+		<Unit filename="editor/editorPlatformModule.hpp" />
+		<Unit filename="effects/animation.cpp" />
+		<Unit filename="effects/animation.hpp" />
+		<Unit filename="effects/colorScheme.cpp" />
+		<Unit filename="effects/colorScheme.hpp" />
+		<Unit filename="effects/effectObj.cpp" />
+		<Unit filename="effects/effectObj.hpp" />
+		<Unit filename="effects/effects.cpp" />
+		<Unit filename="effects/effects.hpp" />
+		<Unit filename="effects/sound.cpp" />
+		<Unit filename="effects/sound.hpp" />
+		<Unit filename="environment/flourish/grass.cpp" />
+		<Unit filename="environment/flourish/grass.hpp" />
+		<Unit filename="environment/flourish/lamp/conicalLampA.hpp" />
+		<Unit filename="environment/flourish/lamp/conicalLampB.hpp" />
+		<Unit filename="environment/flourish/lamp/conicalLampC.hpp" />
+		<Unit filename="environment/flourish/lamp/hatLamp.hpp" />
+		<Unit filename="environment/flourish/lamp/pipeLamp.hpp" />
+		<Unit filename="environment/flourish/lamp/teeterLamp.cpp" />
+		<Unit filename="environment/flourish/lamp/teeterLamp.hpp" />
+		<Unit filename="environment/flourish/teeter.cpp" />
+		<Unit filename="environment/flourish/teeter.hpp" />
+		<Unit filename="environment/flourish/tree/cutTree.hpp" />
+		<Unit filename="environment/flourish/tree/firLong.hpp" />
+		<Unit filename="environment/flourish/tree/firShort.hpp" />
+		<Unit filename="environment/flourish/tree/oak.hpp" />
+		<Unit filename="environment/flourish/tree/roundTree.hpp" />
+		<Unit filename="environment/flourish/tree/sakura.hpp" />
+		<Unit filename="environment/flourish/tree/shrub.hpp" />
+		<Unit filename="environment/flourish/tree/shrubSmall.hpp" />
+		<Unit filename="environment/flourish/tree/teeterTree.cpp" />
+		<Unit filename="environment/flourish/tree/teeterTree.hpp" />
+		<Unit filename="environment/maps.cpp" />
+		<Unit filename="environment/maps.hpp" />
+		<Unit filename="environment/walkable/bridge.cpp" />
+		<Unit filename="environment/walkable/bridge.hpp" />
+		<Unit filename="environment/walkable/ladder.hpp" />
+		<Unit filename="environment/walkable/platform.hpp" />
+		<Unit filename="environment/walkable/scalablePlatform.cpp" />
+		<Unit filename="environment/walkable/scalablePlatform.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="projectiles/projectileObj.cpp" />
+		<Unit filename="projectiles/projectileObj.hpp" />
+		<Unit filename="projectiles/projectiles.cpp" />
+		<Unit filename="projectiles/projectiles.hpp" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="tinyXML/tinystr.cpp" />
+		<Unit filename="tinyXML/tinystr.h" />
+		<Unit filename="tinyXML/tinyxml.cpp" />
+		<Unit filename="tinyXML/tinyxml.h" />
+		<Unit filename="tinyXML/tinyxmlerror.cpp" />
+		<Unit filename="tinyXML/tinyxmlparser.cpp" />
+		<Unit filename="tools/Box2DTools.cpp" />
+		<Unit filename="tools/Box2DTools.hpp" />
+		<Unit filename="tools/files.cpp" />
+		<Unit filename="tools/files.hpp" />
+		<Unit filename="tools/graph.cpp" />
+		<Unit filename="tools/graph.hpp" />
+		<Unit filename="tools/input.cpp" />
+		<Unit filename="tools/input.hpp" />
+		<Unit filename="tools/mapReader.cpp" />
+		<Unit filename="tools/mapReader.hpp" />
+		<Unit filename="tools/settings.cpp" />
+		<Unit filename="tools/settings.hpp" />
+		<Unit filename="tools/utils.cpp" />
+		<Unit filename="tools/utils.hpp" />
+		<Unit filename="tools/xmlReader.cpp" />
+		<Unit filename="tools/xmlReader.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

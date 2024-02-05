@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="characters\AI.hpp" />
+    <ClInclude Include="characters\hero.hpp" />
+    <ClInclude Include="characters\wizard.hpp" />
+    <ClInclude Include="editor\editor.hpp" />
+    <ClInclude Include="editor\editorBridgeModule.hpp" />
+    <ClInclude Include="editor\editorGroundModule.hpp" />
+    <ClInclude Include="editor\editorPlatformModule.hpp" />
+    <ClInclude Include="effects\animation.hpp" />
+    <ClInclude Include="effects\colorScheme.hpp" />
+    <ClInclude Include="effects\effectObj.hpp" />
+    <ClInclude Include="effects\effects.hpp" />
+    <ClInclude Include="effects\sound.hpp" />
+    <ClInclude Include="environment\flourish\grass.hpp" />
+    <ClInclude Include="environment\flourish\lamp\conicalLampA.hpp" />
+    <ClInclude Include="environment\flourish\lamp\conicalLampB.hpp" />
+    <ClInclude Include="environment\flourish\lamp\conicalLampC.hpp" />
+    <ClInclude Include="environment\flourish\lamp\hatLamp.hpp" />
+    <ClInclude Include="environment\flourish\lamp\pipeLamp.hpp" />
+    <ClInclude Include="environment\flourish\lamp\teeterLamp.hpp" />
+    <ClInclude Include="environment\flourish\teeter.hpp" />
+    <ClInclude Include="environment\flourish\tree\cutTree.hpp" />
+    <ClInclude Include="environment\flourish\tree\firLong.hpp" />
+    <ClInclude Include="environment\flourish\tree\firShort.hpp" />
+    <ClInclude Include="environment\flourish\tree\oak.hpp" />
+    <ClInclude Include="environment\flourish\tree\roundTree.hpp" />
+    <ClInclude Include="environment\flourish\tree\sakura.hpp" />
+    <ClInclude Include="environment\flourish\tree\shrub.hpp" />
+    <ClInclude Include="environment\flourish\tree\shrubSmall.hpp" />
+    <ClInclude Include="environment\flourish\tree\teeterTree.hpp" />
+    <ClInclude Include="environment\maps.hpp" />
+    <ClInclude Include="environment\walkable\bridge.hpp" />
+    <ClInclude Include="environment\walkable\ladder.hpp" />
+    <ClInclude Include="environment\walkable\platform.hpp" />
+    <ClInclude Include="environment\walkable\scalablePlatform.hpp" />
+    <ClInclude Include="projectiles\projectiles.hpp" />
+    <ClInclude Include="projectiles\projectileObj.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="tinyXML\tinystr.h" />
+    <ClInclude Include="tinyXML\tinyxml.h" />
+    <ClInclude Include="tools\Box2DTools.hpp" />
+    <ClInclude Include="tools\files.hpp" />
+    <ClInclude Include="tools\graph.hpp" />
+    <ClInclude Include="tools\input.hpp" />
+    <ClInclude Include="tools\mapReader.hpp" />
+    <ClInclude Include="tools\settings.hpp" />
+    <ClInclude Include="tools\utils.hpp" />
+    <ClInclude Include="tools\xmlReader.hpp" />
+    <ClInclude Include="UI\display\keyboardKey.hpp" />
+    <ClInclude Include="UI\display\playerHUD.hpp" />
+    <ClInclude Include="UI\display\scoreManager.hpp" />
+    <ClInclude Include="UI\mainGame.hpp" />
+    <ClInclude Include="UI\menu\heroSelector.hpp" />
+    <ClInclude Include="UI\menu\menuHeroSelector.hpp" />
+    <ClInclude Include="UI\menu\menuList.hpp" />
+    <ClInclude Include="UI\menu\menuOptions.hpp" />
+    <ClInclude Include="UI\menu\menuPad.hpp" />
+    <ClInclude Include="UI\menu\menuSelector.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="characters\AI.cpp" />
+    <ClCompile Include="characters\hero.cpp" />
+    <ClCompile Include="characters\wizard.cpp" />
+    <ClCompile Include="editor\editor.cpp" />
+    <ClCompile Include="editor\editorBridgeModule.cpp" />
+    <ClCompile Include="editor\editorGroundModule.cpp" />
+    <ClCompile Include="editor\editorPlatformModule.cpp" />
+    <ClCompile Include="effects\animation.cpp" />
+    <ClCompile Include="effects\colorScheme.cpp" />
+    <ClCompile Include="effects\effectObj.cpp" />
+    <ClCompile Include="effects\effects.cpp" />
+    <ClCompile Include="effects\sound.cpp" />
+    <ClCompile Include="environment\flourish\grass.cpp" />
+    <ClCompile Include="environment\flourish\lamp\teeterLamp.cpp" />
+    <ClCompile Include="environment\flourish\teeter.cpp" />
+    <ClCompile Include="environment\flourish\tree\teeterTree.cpp" />
+    <ClCompile Include="environment\maps.cpp" />
+    <ClCompile Include="environment\walkable\bridge.cpp" />
+    <ClCompile Include="environment\walkable\scalablePlatform.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="projectiles\projectiles.cpp" />
+    <ClCompile Include="projectiles\projectileObj.cpp" />
+    <ClCompile Include="tinyXML\tinystr.cpp" />
+    <ClCompile Include="tinyXML\tinyxml.cpp" />
+    <ClCompile Include="tinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="tinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="tools\Box2DTools.cpp" />
+    <ClCompile Include="tools\files.cpp" />
+    <ClCompile Include="tools\graph.cpp" />
+    <ClCompile Include="tools\input.cpp" />
+    <ClCompile Include="tools\mapReader.cpp" />
+    <ClCompile Include="tools\settings.cpp" />
+    <ClCompile Include="tools\utils.cpp" />
+    <ClCompile Include="tools\xmlReader.cpp" />
+    <ClCompile Include="UI\display\keyboardKey.cpp" />
+    <ClCompile Include="UI\display\playerHUD.cpp" />
+    <ClCompile Include="UI\display\scoreManager.cpp" />
+    <ClCompile Include="UI\mainGame.cpp" />
+    <ClCompile Include="UI\menu\heroSelector.cpp" />
+    <ClCompile Include="UI\menu\menuHeroSelector.cpp" />
+    <ClCompile Include="UI\menu\menuList.cpp" />
+    <ClCompile Include="UI\menu\menuOptions.cpp" />
+    <ClCompile Include="UI\menu\menuPad.cpp" />
+    <ClCompile Include="UI\menu\menuSelector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EggFall_vs.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5730F55E-B01B-4B15-B4CA-C216B10F46B9}</ProjectGuid>
+    <RootNamespace>EggFall_vs</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>I:\Microsoft Visual Studio 14.0\Box2D\include;I:\Microsoft Visual Studio 14.0\SFML-2.4.2\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>I:\Microsoft Visual Studio 14.0\Box2D\lib;I:\Microsoft Visual Studio 14.0\SFML-2.4.2\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>I:\Microsoft Visual Studio 14.0\Box2D\include;I:\Microsoft Visual Studio 14.0\SFML-2.4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>I:\Microsoft Visual Studio 14.0\Box2D\lib;I:\Microsoft Visual Studio 14.0\SFML-2.4.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<config>
+	<key type="JUMP">
+		54
+	</key>
+	<key type="ATTACK">
+		12
+	</key>
+	<key type="COUNTERACT">
+		48
+	</key>
+	<key type="DASH">
+		53
+	</key>
+	<key type="AIM">
+		20
+	</key>
+	<key type="UP">
+		8
+	</key>
+	<key type="DOWN">
+		10
+	</key>
+	<key type="LEFT">
+		9
+	</key>
+	<key type="RIGHT">
+		11
+	</key>
+</config>
